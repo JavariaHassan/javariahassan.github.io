@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Javaria's Portfolio</title>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+  <style>
+    .profile-page.profile_theme_two .profile-info,
+    .profile-page.profile_theme_two .projects-list .project .project-name .project-title,
+    .profile-page.profile_theme_two .projects-list .project .project-name .project-subtitle,
+    .ufo--about-page {
+      --h1Font: "Rubik";
+      --h1Color: #282a2b;
+      --h1Weight: normal;
+      --h1Style: normal;
+      --h1Size: 40px;
+      --h1Height: 50px;
+      --h2Font: "Rubik";
+      --h2Color: #778390;
+      --h2Weight: normal;
+      --h2Style: normal;
+      --h2Size: 21px;
+      --h2Height: 32px;
+      --p1Font: "Rubik";
+      --p1Color: #8d98a1;
+      --p1Weight: normal;
+      --p1Style: normal;
+      --p1Size: 17px;
+      --p1Height: 30px;
+      --projectTitleFont: "Rubik";
+      --projectTitleColor: #282a2b;
+      --projectTitleWeight: bold;
+      --projectTitleStyle: normal;
+      --projectSubTitleFont: "Rubik";
+      --projectSubTitleColor: #282a2b;
+      --projectSubTitleWeight: normal;
+      --projectSubTitleStyle: normal;
+      --buttonFont: "Rubik";
+      --buttonColor: #8d98a1;
+      --buttonWeight: bold;
+      --buttonStyle: normal;
+      --borderColor: #8d98a133;
+      --buttonSize: 12px;
+      --buttonHeight: 21px;
+      --projectTitleSize: 20px;
+      --projectTitleHeight: 23px;
+      --projectSubTitleSize: 17px;
+      --projectSubTitleHeight: 30px;
+    }
+    
+    .profile-footer,
+    .ufo--contact-page,
+    .profile-footer.profile_theme_two {
+      --textColor: #8d98a199;
+      --borderColor: #8d98a133;
+    }
+    
+    .profile-footer,
+    .ufo--contact-page,
+    .profile-footer.profile_theme_two {
+      --buttonColor: #8d98a1;
+    }
+    /* @media (min-width: 768px) {
+      .profile-page.profile_theme_two .profile-info,
+      .profile-page.profile_theme_two .projects-list .project .project-name .project-title,
+      .profile-page.profile_theme_two .projects-list .project .project-name .project-subtitle,
+      .ufo--about-page {
+        --h1Size: 48px;
+        --h1Height: 51px;
+        --h2Size: 30px;
+        --h2Height: 33px;
+        --p1Size: 24px;
+        --p1Height: 37px;
+        --projectTitleSize: 30px;
+        --projectTitleHeight: 35px;
+        --projectSubTitleSize: 18px;
+        --projectSubTitleHeight: 27px;
+        --buttonSize: 12px;
+        --buttonHeight: 15px;
+      }
+    } */
+    
+    @media (min-width: 1025px) {
+      .projects-list .project .project-name .project-title {
+        color: var(--projectTitleColor) !important;
+      }
+    }
+    
+    @media (min-width: 1025px) {
+      .projects-list .project .project-name .project-subtitle {
+        color: var(--projectSubTitleColor) !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <div class="ufo--portfolio-container">
+
+      <div class="profile-page profile_theme_two profile--hp">
+
+        <div class="ufo--container">
+          <div class="ufo--user-profile-info profile_theme_two">
+            <div class="profile-info has-picture">
+
+              <!-- <div class="profile-cover profile-picture">
+                <img src="img/profile-pic.jpg">
+              </div> -->
+              <div class="profile-short-cv">
+                <div class="profile-about">
+                  <h1>Javaria Hassan</h1>
+                  <!-- <p></p> -->
+                  <!-- <h2>Software Engineer</h2> -->
+                  <p></p>
+                  <p>I’m a UX designer. I’m passionate about creating usable digital products. I have worked with incredibly talented people across different companies.</p>
+                </div>
+                <div class="profile-links">
+                  <div class="social-platforms">
+                    <a href="https://www.linkedin.com/in/javaria-hassan-b80397158/" target="_blank" rel="nofollow noopener" class="linkedin">
+                      <i class="fa fa-linkedin"></i>
+
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100007579728816" target="_blank" rel="nofollow noopener" class="facebook">
+                      <i class="fa fa-facebook"></i>
+
+                    </a>
+                    <a href="https://www.instagram.com/javariahsn/?hl=en" target="_blank" rel="nofollow noopener" class="instagram">
+                      <i class="fa fa-instagram"></i>
+
+                    </a>
+                  </div>
+
+                  <div class="profile-button ">
+                    <div onclick="navigateToPage('about')" class="btn">About</div>
+                  </div>
+                  <div class="profile-button contact-button ">
+                    <div onclick="navigateToPage('contact')" class="btn">Contact</div>
+                  </div>
+                  <div class="profile-button resume-button">
+                    <a href="https://storage.googleapis.com/uxfolio/5fa953d304ba3e00041ebd61/cv/javaria_hassan_resume_NCn.pdf" target="_blank" rel="nofollow noopener" class="btn">Resumé</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ufo--user-projects-list">
+            <div class="works_line_profile_theme_two"></div>
+            <div class="ufo--user-projects">
+              <div class="projects-list ">
+                <a href="case-study.html" class="project title-is--visible title-is--alternating title-is--dark thumbnail-is--medium thumbnail-is--medium-alternating title-align--middle title-justify--left">
+                  <div class="project-name">
+                    <div class="project-title">The EZ-MMLA Toolkit</div>
+                    <div class="project-subtitle">A data collection website that provides educators and researchers with easy access to multimodal data streams.</div>
+                  </div>
+                  <div class="image-container " style="">
+                    <img src="img/trees.jpg">
+                  </div>
+                </a>
+                <a href="#" class="project title-is--visible title-is--alternating title-is--dark thumbnail-is--medium thumbnail-is--medium-alternating title-align--middle title-justify--left">
+                  <div class="project-name">
+                    <div class="project-title">LIT Lab’s Learning Portal</div>
+                    <div class="project-subtitle">An educational website that teaches multimodal analytics to students and captures their multimodal data in the background.</div>
+                  </div>
+                  <div class="image-container " style="">
+                    <img src="img/trees.jpg">
+                  </div>
+                </a>
+                <a href="#" class="project title-is--visible title-is--alternating title-is--dark thumbnail-is--medium thumbnail-is--medium-alternating title-align--middle title-justify--left">
+                  <div class="project-name">
+                    <div class="project-title">Focus</div>
+                    <div class="project-subtitle">A co-designed virtual-space shooting game for the blind and visually impaired.</div>
+                  </div>
+                  <div class="image-container " style="">
+                    <img src="img/trees.jpg">
+                  </div>
+                </a>
+                <a href="#" class="project title-is--visible title-is--alternating title-is--dark thumbnail-is--medium thumbnail-is--medium-alternating title-align--middle title-justify--left">
+                  <div class="project-name">
+                    <div class="project-title">GenBi</div>
+                    <div class="project-subtitle">A tool to analyze gender bias in news articles.</div>
+                  </div>
+                  <div class="image-container " style="">
+                    <img src="img/trees.jpg">
+                  </div>
+                </a>
+                <a href="#" class="project title-is--visible title-is--alternating title-is--dark thumbnail-is--medium thumbnail-is--medium-alternating title-align--middle title-justify--left">
+                  <div class="project-name">
+                    <div class="project-title">The Defence Club – Booking Application</div>
+                    <div class="project-subtitle">Insert caption here.</div>
+                  </div>
+                  <div class="image-container " style="">
+                    <img src="img/trees.jpg">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="profile-footer profile_theme_two">
+        <div class="ufo--container">
+          <div class="profile-footer-content">
+            <a href="https://www.linkedin.com/in/javaria-hassan-b80397158/" target="_blank" rel="nofollow noopener" class="footer-url">linkedin</a>
+            <a href="https://www.facebook.com/profile.php?id=100007579728816" target="_blank" rel="nofollow noopener" class="footer-url">facebook</a>
+            <a href="https://www.instagram.com/javariahsn/?hl=en" target="_blank" rel="nofollow noopener" class="footer-url">instagram</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
