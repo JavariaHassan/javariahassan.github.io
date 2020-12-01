@@ -10,11 +10,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="case-study.css">
-  <title>Tell The Story of Your Design</title>
+  <title>The EZ-MMLA Toolkit</title>
 
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <style>
      :root {
@@ -48,7 +49,7 @@
       --h4Style: normal;
       --h4Size: 17px;
       --h4Height: 20px;
-      --p1Font: "Rubik";
+      --p1Font: "Open Sans";
       --p1Color: #353738;
       --p1Weight: normal;
       --p1Style: normal;
@@ -61,17 +62,17 @@
       --p2Size: 16px;
       --p2Height: 16px;
       --projectTitleFont: "Rubik";
-      --projectTitleColor: #ffffff;
+      --projectTitleColor: #252829;
       --projectTitleWeight: bold;
       --projectTitleStyle: normal;
       --projectTitleSize: 35px;
-      --projectTitleHeight: 36px;
-      --projectSubTitleFont: "Rubik";
-      --projectSubTitleColor: #ffffff;
+      --projectTitleHeight: 45px;
+      --projectSubTitleFont: "Open Sans";
+      --projectSubTitleColor: #252829;
       --projectSubTitleWeight: normal;
       --projectSubTitleStyle: normal;
       --projectSubTitleSize: 16px;
-      --projectSubTitleHeight: 25px;
+      --projectSubTitleHeight: 28px;
     }
     
     @media (min-width: 576px) {
@@ -83,7 +84,7 @@
         --projectTitleSize: 48px;
         --projectTitleHeight: 51px;
         --projectSubTitleSize: 22px;
-        --projectSubTitleHeight: 32px;
+        --projectSubTitleHeight: 37px;
       }
     }
     
@@ -104,7 +105,7 @@
         --projectTitleSize: 88px;
         --projectTitleHeight: 91px;
         --projectSubTitleSize: 22px;
-        --projectSubTitleHeight: 32px;
+        --projectSubTitleHeight: 37px;
       }
     }
     
@@ -123,6 +124,60 @@
         text-align: left;
       }
     }
+    
+    td {
+      display: table-cell;
+      align-items: center;
+      /* border: 1px dotted red;
+      background-color: red; */
+    }
+    
+    .hero-main-content {
+      max-width: 1240px;
+      padding: 0px 20px 0px 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .hero-text {
+      width: 60%;
+      padding-right: 20px;
+    }
+    
+    .hero-image {
+      text-align: center;
+      vertical-align: bottom;
+    }
+    
+    .hero-image img {
+      height: 40%;
+      width: auto;
+    }
+    
+    @media only screen and (max-width: 768px) {
+      td {
+        display: block;
+      }
+      .hero-text {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .hero-image img {
+        width: 50%;
+        height: auto;
+        margin-top: 20px;
+      }
+      .hero-text h1 {
+        margin-bottom: 10px;
+      }
+    }
+    
+    a {
+      color: #353738 !important;
+      text-decoration: underline !important;
+      font-weight: bold;
+    }
   </style>
 </head>
 
@@ -130,8 +185,8 @@
   <main>
     <div class="ufo--case-study-container project">
 
-
-      <section id="section-0" class="ufo--case-study-section p_section p_section--header-main  " style="background-image: url(img/trees.jpg);  margin-bottom: 40px;">
+      <!-- <section id="section-0" class="ufo--case-study-section p_section p_section--header-main  " style="background-color: #aecdbf; background-image: url(img/man.png); background-size: auto 110%; background-repeat: no-repeat; background-position: bottom right;  margin-bottom: 40px;"> -->
+      <section id="section-0" class="ufo--case-study-section p_section p_section--header-main  " style="background-color: #aecdbf; margin-bottom: 40px;">
         <div class="ufo--p-container-fluid ">
           <div class="project-owner">
             <div class="owner" onclick="window.location.href='index.html'">
@@ -141,12 +196,25 @@
             </div>
           </div>
 
-          <div class="ufo--hero-content-grid   ">
-            <div class="text-container  ">
+          <table class="hero-main-content" width="100%" height="100%" style="padding-top: 5%;" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td class="hero-text">
+                  <h1>The EZ-MMLA Toolkit</h1>
+                  <h2>A data collection website that provides educators and researchers with easy access to multimodal data streams.</h2>
+                </td>
+                <td class="hero-image">
+                  <img src="img/man-cropped.png">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- <div class="ufo--hero-content-grid">
+            <div class="text-container">
               <h1>The EZ-MMLA Toolkit</h1>
               <h2>A data collection website that provides educators and researchers with easy access to multimodal data streams.</h2>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -155,8 +223,22 @@
           <div class="text-container">
             <h3>Overview</h3>
             <p>
-              We are developing a data collection website that provides educators and researchers with easy access to multimodal data streams via video and audio feeds. The website uses state-of-the-art machine learning algorithms to collect data on students’ body
-              posture, hand gestures, attention, emotions, and physiological states. It presents a more intuitive, low-cost, and ethical approach to generating multimodal data compared with traditionally used physical sensor technologies.</p>
+              I am working with a group of researchers at the <a target="_blank" href="https://lit.gse.harvard.edu/">Learning, Innovation, and Technology lab</a> based at the Harvard Graduate School of Education to develop a multimodal data collection
+              website. The website uses state-of-the-art machine learning algorithms to collect data on students’ body posture, hand gestures, attention, emotions, and physiological states. The application is currently being used by 60 Harvard graduate
+              students enrolled in a Multimodal Analytics course.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="ufo--case-study-section p_section p_section--text" style=" ">
+        <div class="ufo--p-container-fluid">
+          <div class="text-container">
+            <h3>My Role</h3>
+            <p>
+              I am the team lead for this project. I researched the most effective models to use in the application, developed the frontend for 11/15 tools currently available on the website, architected and developed the backend, and deployed the application. I also
+              provided technical guidance and mentorship to team members.
+            </p>
           </div>
         </div>
       </section>
@@ -199,10 +281,21 @@
       <section class="ufo--case-study-section p_section p_section--text" style=" ">
         <div class="ufo--p-container-fluid">
           <div class="text-container">
+            <h3>The Goal</h3>
+            <p>
+              Our goal is to democratize multimodal data collection using advanced machine learning algorithms behind a user-friendly interface. We want to design a more intuitive, low-cost, and ethical solution compared to traditionally used physical sensor technologies.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="ufo--case-study-section p_section p_section--text" style=" ">
+        <div class="ufo--p-container-fluid">
+          <div class="text-container">
             <h3>Our Solution</h3>
             <p>
-              To overcome the limitations described above, we developed the EZ-MMLA toolkit. The EZ-MMLA Toolkit is a website for collecting multimodal data via video and audio input captured either in real-time or uploaded for post-processing. It is free to use and
-              open to the public, so it can be used by all educational practitioners and researchers to collect multimodal student data. The types of data currently collected through the website are:
+              We developed the EZ-MMLA toolkit, which is a website for collecting multimodal data via video and audio input captured either in real-time or uploaded for post-processing. It is free to use and open to the public, so it can be used by all educational
+              practitioners and researchers to collect multimodal student data. The types of data currently collected through the website are:
               <ol>
                 <li>Body posture (skeletal data),</li>
                 <li>Hand gestures,</li>

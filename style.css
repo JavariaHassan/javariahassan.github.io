@@ -9048,7 +9048,7 @@ select {
 }
 
 .projects-list .project.thumbnail-is--medium .project-name .project-title {
-  margin-bottom: 24px
+  margin-bottom: 7px;
 }
 
 .projects-list .project.thumbnail-is--medium .image-container,
