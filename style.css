@@ -12557,7 +12557,8 @@ select {
 
 .profile_theme_two .profile-info .social-platforms {
   order: 4;
-  margin-top: 20px
+  margin-top: 20px;
+  display: flex;
 }
 
 .profile_theme_two .profile-info .social-platforms:not(.editor) {
@@ -12678,8 +12679,8 @@ select {
     max-width: 58.33333%;
     width: 100%;
     padding-left: 100px;
-    padding-top: 72px;
-    padding-bottom: 72px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center
