@@ -17162,7 +17162,7 @@ project-edit-nav.is-visible li:nth-child(4) {
 }
 
 .ufo--about-page-profile_theme_two .about-title {
-  padding-top: 100px;
+  padding-top: 0;
   position: relative
 }
 
@@ -17472,6 +17472,9 @@ project-edit-nav.is-visible li:nth-child(4) {
     top: 50%;
     transform: translateY(-50%)
   }
+  .ufo--about-page-profile_theme_two .about-title {
+    padding-top: 100px;
+  }
   .ufo--about-page-profile_theme_three .ufo--about-content,
   .ufo--about-page-profile_theme_three_old .ufo--about-content {
     padding: 60px 0;
@@ -17551,7 +17554,7 @@ project-edit-nav.is-visible li:nth-child(4) {
     grid-column: 3/span 8
   }
   .ufo--about-page-profile_theme_nine .ufo--about-header .about-title {
-    margin-top: 0
+    margin-top: 0;
   }
 }
 
