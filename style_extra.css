@@ -1,0 +1,45 @@
+.toggle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.toggle p {
+  font-family: Rubik, sans-serif;
+  font-size: 14px;
+  color: #c8c8c8;
+  padding-right: 14px;
+  margin: 0;
+}
+
+.toggle .layout {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  border: 1px solid var(--borderColor);
+  background-color: transparent;
+  border-radius: 20px;
+}
+
+.toggle .layout div {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.toggle svg {
+  width: 18px;
+  fill: #c8c8c8;
+}
+
+.toggle .active svg {
+  width: 18px;
+  fill: #fff;
+}
+
+.toggle .layout div.active {
+  background-color: #c8c8c8;
+}

@@ -20,6 +20,7 @@
   </script>
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_extra.css">
 
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -119,22 +120,14 @@
 
   <main>
     <div class="ufo--portfolio-container">
-
       <div class="profile-page profile_theme_two profile--hp">
-
         <div class="ufo--container">
           <div class="ufo--user-profile-info profile_theme_two">
             <div class="profile-info has-picture">
-
-              <!-- <div class="profile-cover profile-picture">
-                <img src="img/dp.jpg">
-              </div> -->
               <div class="profile-short-cv">
                 <div class="profile-about">
                   <h1>👩🏻‍💻 Javaria Hassan</h1>
                   <p></p>
-                  <!-- <h2>Software Engineer</h2> -->
-                  <!-- <p></p> -->
                   <p>Hi! I'm Javaria, a master's student at Harvard University studying technology, learning design, and innovation. I work at the intersection of engineering, human-computer interaction, machine learning, and education to make technology
                     accessible, enjoyable, and useful. <a href="about.html">Read&nbsp;more.</a></p>
                 </div>
@@ -150,10 +143,6 @@
                       <i class="fa fa-instagram fa-lg"></i>
                     </a>
                   </div>
-
-                  <!-- <div class="profile-button ">
-                    <div onclick="navigateToPage('about')" class="btn">About</div>
-                  </div> -->
                   <div class="profile-button contact-button ">
                     <div onclick="location.href='about.html'" class="btn">About</div>
                   </div>
@@ -167,65 +156,34 @@
               </div>
             </div>
           </div>
-
           <div class="ufo--user-projects-list">
             <div class="works_line_profile_theme_two"></div>
+            <div class="toggle">
+              <p>VIEW</p>
+              <div class="layout">
+                <div onclick="list_view()" id="toggle_list" class="">
+                  <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m5 0h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m23 0h-14c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h14c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m5 9h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m23 9h-14c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h14c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m5 18h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m23 18h-14c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h14c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path></svg>
+                </div>
+                <div onclick="grid_view()" id="toggle_grid" class="">
+                  <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m5 0h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m5 9h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m5 18h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m14 0h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m14 9h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m14 18h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m23 0h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m23 9h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m23 18h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path></svg>
+                </div>
+              </div>
+            </div>
+            
+            <!-- List -->
             <div class="ufo--user-projects">
-              <div class="projects-list ">
-                <a href="case-study-1.html" class="project title-is--visible title-is--alternating title-is--dark thumbnail-is--medium thumbnail-is--medium-alternating title-align--middle title-justify--left">
-                  <div class="project-name">
-                    <div class="project-title">Multimodal Data Collection Made Easy: The EZ-MMLA Toolkit</div>
-                    <div class="project-subtitle">A data collection website that provides educators and researchers with easy access to multimodal data streams.</div>
-                  </div>
-                  <div class="image-container " style="">
-                    <img src="img/man.png">
-                  </div>
-                </a>
-                <a href="case-study-2.html" class="project title-is--visible title-is--alternating title-is--dark thumbnail-is--medium thumbnail-is--medium-alternating title-align--middle title-justify--left">
-                  <div class="project-name">
-                    <div class="project-title">LIT Lab’s Learning Portal</div>
-                    <div class="project-subtitle">An educational website that teaches multimodal analytics to students and captures their multimodal data in the background.</div>
-                  </div>
-                  <div class="image-container " style="">
-                    <img src="img/book-bug.png">
-                  </div>
-                </a>
-                <a href="case-study-3.html" class="project title-is--visible title-is--alternating title-is--dark thumbnail-is--medium thumbnail-is--medium-alternating title-align--middle title-justify--left">
-                  <div class="project-name">
-                    <div class="project-title">FOCUS: A 3D Sound Shooting Game</div>
-                    <div class="project-subtitle">A co-designed virtual-space shooting game for the blind and visually impaired.</div>
-                  </div>
-                  <div class="image-container " style="">
-                    <img src="img/headphones.png">
-                  </div>
-                </a>
-                <a href="case-study-4.html" class="project title-is--visible title-is--alternating title-is--dark thumbnail-is--medium thumbnail-is--medium-alternating title-align--middle title-justify--left">
-                  <div class="project-name">
-                    <div class="project-title">GenBi: Curbing Gender Bias in Print Media</div>
-                    <div class="project-subtitle">A study of gender portrayals in Pakistan’s print media and the proposal of an application to reduce sexism in the news.</div>
-                  </div>
-                  <div class="image-container " style="">
-                    <img src="img/gender.png">
-                  </div>
-                </a>
-                <!-- <a href="#" class="project title-is--visible title-is--alternating title-is--dark thumbnail-is--medium thumbnail-is--medium-alternating title-align--middle title-justify--left">
-                  <div class="project-name">
-                    <div class="project-title">The Defence Club – Booking Application</div>
-                    <div class="project-subtitle">Insert caption here.</div>
-                  </div>
-                  <div class="image-container " style="">
-                    <img src="img/trees.jpg">
-                  </div>
-                </a> -->
+              <div id="projects-list" class="projects-list" style="display: none;">
+              </div>
+            </div>
+
+            <!-- Grid -->
+            <div class="ufo--container" style="padding: 0">
+              <div id="projects-grid" class="projects-list" style="display: none;">
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
-
-
       <div class="profile-footer profile_theme_two">
         <div class="ufo--container">
           <div class="profile-footer-content">
@@ -236,11 +194,129 @@
           </div>
         </div>
       </div>
-
     </div>
-
   </main>
 
+  <script>
+    projects = [{
+      'url': 'case-study-1.html',
+      'title': 'Multimodal Data Collection Made Easy: The EZ-MMLA Toolkit',
+      'subtitle': 'A data collection website that provides educators and researchers with easy access to multimodal data streams.',
+      'img': 'man.png'
+    }, {
+      'url': 'case-study-2.html',
+      'title': 'LIT Lab’s Learning Portal',
+      'subtitle': 'An educational website that teaches multimodal analytics to students and captures their multimodal data in the background.',
+      'img': 'book-bug.png'
+    }, {
+      'url': 'case-study-3.html',
+      'title': 'FOCUS: A 3D Sound Shooting Game',
+      'subtitle': 'A co-designed virtual-space shooting game for the blind and visually impaired.',
+      'img': 'headphones.png'
+    }, {
+      'url': 'case-study-4.html',
+      'title': 'GenBi: Curbing Gender Bias in Print Media',
+      'subtitle': 'A study of gender portrayals in Pakistan’s print media and the proposal of an application to reduce sexism in the news.',
+      'img': 'gender.png'
+    }, ]
+
+    projects_list_html = ''
+    projects.forEach((project) => {
+      projects_list_html = projects_list_html.concat(
+        "<a href='"+project.url+"' class='project title-is--visible title-is--alternating title-is--dark thumbnail-is--medium thumbnail-is--medium-alternating title-align--middle title-justify--left'>\
+            <div class='project-name'>\
+              <div class='project-title'>"+project.title+"</div>\
+              <div class='project-subtitle'>"+project.subtitle+"</div>\
+            </div>\
+            <div class='image-container'>\
+              <img src='img/"+project.img+"'>\
+            </div>\
+          </a>"
+      )
+    });
+    document.getElementById('projects-list').innerHTML = projects_list_html;
+
+    projects_grid_html = ''
+    projects.forEach((project) => {
+      projects_grid_html = projects_grid_html.concat(
+        "<a href='"+project.url+"' class='project title-is--on-thumbnail title-is--dark thumbnail-is--small thumbnail-is--small title-align--center title-justify--center'>\
+          <div class='project-name'>\
+            <div class='ufo--project-title-container'>\
+              <div class='project-title'>"+project.title+"</div>\
+            </div>\
+            <div class='ufo--project-title-container'>\
+              <div class='project-subtitle'>"+project.subtitle+"</div>\
+            </div>\
+          </div>\
+          <div class='image-container'>\
+            <img src='img/"+project.img+"' class='project-thumbnail'>\
+          </div>\
+        </a>"
+      )
+    });
+    document.getElementById('projects-grid').innerHTML = projects_grid_html;
+
+    function list_view() {
+      toggle_view("list");
+      setCookie("project_view", "list", 365);
+    }
+    function grid_view() {
+      toggle_view("grid");
+      setCookie("project_view", "grid", 365);
+    }
+  </script>
+
+  <script>
+    function setCookie(cname, cvalue, exdays) {
+      const d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      let expires = "expires="+d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function getCookie(cname) {
+      let name = cname + "=";
+      let ca = document.cookie.split(';');
+      for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
+    function checkCookie() {
+      let project_view = getCookie("project_view");
+      if (project_view == "list") {
+        toggle_view("list");
+      } else if (project_view == "grid") {
+        toggle_view("grid");
+      } else {
+        setCookie("project_view", "list", 365);
+        toggle_view("list");
+      }
+    }
+
+    function toggle_view(view) {
+      if (view == "list") {
+        document.getElementById('projects-list').style.display = "grid";
+        document.getElementById('projects-grid').style.display = "none";
+        document.getElementById('toggle_list').classList.add("active");
+        document.getElementById('toggle_grid').classList.remove("active");
+      } else if (view == "grid") {
+        document.getElementById('projects-list').style.display = "none";
+        document.getElementById('projects-grid').style.display = "grid";
+        document.getElementById('toggle_list').classList.remove("active");
+        document.getElementById('toggle_grid').classList.add("active");
+      }
+    }
+
+    checkCookie()
+  </script>
 </body>
 
 </html>
