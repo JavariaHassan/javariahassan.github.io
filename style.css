@@ -912,7 +912,7 @@ a {
 
 a,
 a:hover {
-  color: #007bff
+  color: #00b8ff;
 }
 
 a:not([href]):not([tabindex]),
@@ -8862,7 +8862,7 @@ select {
   position: relative;
   width: 100%;
   height: 100%;
-  padding-top: 100%;
+  padding-top: 86%;
   display: flex;
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(#fff, #000)
@@ -8911,7 +8911,7 @@ select {
   justify-content: center;
   font-weight: 700;
   color: #fff;
-  text-align: center;
+  text-align: left;
   z-index: 2;
   width: 100%;
   height: 100%;
@@ -9405,11 +9405,11 @@ select {
     order: 2
   }
   .projects-list .project:not(.title-is--below):not(.title-is--above) .project-name .project-title {
-    color: var(--h2Color);
+    color: var(--h1Color);
     max-width: 100%
   }
   .projects-list .project:not(.title-is--below):not(.title-is--above) .project-name .project-subtitle {
-    color: var(--p1Color);
+    color: var(--projectSubTitleColor);
     max-width: 100%
   }
   .projects-list .project:not(.title-is--below) .project-name {

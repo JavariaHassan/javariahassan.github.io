@@ -82,33 +82,35 @@
     .profile-footer.profile_theme_two {
       --buttonColor: #8d98a1;
     }
-    /* @media (min-width: 768px) {
-      .profile-page.profile_theme_two .profile-info,
-      .profile-page.profile_theme_two .projects-list .project .project-name .project-title,
-      .profile-page.profile_theme_two .projects-list .project .project-name .project-subtitle,
-      .ufo--about-page {
-        --h1Size: 48px;
-        --h1Height: 51px;
-        --h2Size: 30px;
-        --h2Height: 33px;
-        --p1Size: 24px;
-        --p1Height: 37px;
-        --projectTitleSize: 30px;
-        --projectTitleHeight: 35px;
-        --projectSubTitleSize: 18px;
-        --projectSubTitleHeight: 27px;
-        --buttonSize: 12px;
-        --buttonHeight: 15px;
-      }
-    } */
     
+    .toggle {
+      display: none;
+    }
+
+    .location {
+      font-family: var(--projectSubTitleFont);
+      font-size: 15px;
+      font-weight: var(--projectSubTitleWeight);
+      font-style: var(--projectSubTitleStyle);
+      line-height: var(--projectSubTitleHeight);
+      color: var(--p1Color);
+      margin-top: 10px;
+    }
+
+    .ufo--project-title-container .location {
+      color: var(--h2Color);
+    }
+
+    @media (min-width: 768px) {
+      .toggle {
+        display: flex;
+      }
+    }
+
     @media (min-width: 1025px) {
       .projects-list .project .project-name .project-title {
         color: var(--projectTitleColor) !important;
       }
-    }
-    
-    @media (min-width: 1025px) {
       .projects-list .project .project-name .project-subtitle {
         color: var(--projectSubTitleColor) !important;
       }
@@ -199,34 +201,45 @@
 
   <script>
     projects = [{
-      'url': 'case-study-1.html',
+      'url': 'ez-mmla.html',
       'title': 'Multimodal Data Collection Made Easy: The EZ-MMLA Toolkit',
       'subtitle': 'A data collection website that provides educators and researchers with easy access to multimodal data streams.',
+      'location': 'Harvard University, Learning Innovation and Technology Lab',
       'img': 'man.png'
     }, {
-      'url': 'case-study-2.html',
+      'url': 'case-study-5.html',
+      'title': 'Effect of Nonverbal Cues in Children’s Engagement During Dialogic Reading',
+      'subtitle': 'A research paper exploring the effect of a parent’s nonverbal cues on a child’s engagement during a joint educational reading task.',
+      'location': 'MIT Media Lab, Affective Computing Group',
+      'img': 'books2.png'
+    }, {
+      'url': 'learning-portal.html',
       'title': 'LIT Lab’s Learning Portal',
       'subtitle': 'An educational website that teaches multimodal analytics to students and captures their multimodal data in the background.',
+      'location': 'Harvard University, Learning Innovation and Technology Lab',
       'img': 'book-bug.png'
     }, {
-      'url': 'case-study-3.html',
+      'url': 'focus.html',
       'title': 'FOCUS: A 3D Sound Shooting Game',
       'subtitle': 'A co-designed virtual-space shooting game for the blind and visually impaired.',
+      'location': 'LUMS University, Pakistan',
       'img': 'headphones.png'
     }, {
-      'url': 'case-study-4.html',
+      'url': 'bias-in-media.html',
       'title': 'GenBi: Curbing Gender Bias in Print Media',
       'subtitle': 'A study of gender portrayals in Pakistan’s print media and the proposal of an application to reduce sexism in the news.',
+      'location': 'LUMS University, Technology for People Initiative Lab, Pakistan',
       'img': 'gender.png'
     }, ]
 
     projects_list_html = ''
     projects.forEach((project) => {
       projects_list_html = projects_list_html.concat(
-        "<a href='"+project.url+"' class='project title-is--visible title-is--alternating title-is--dark thumbnail-is--medium thumbnail-is--medium-alternating title-align--middle title-justify--left'>\
+        "<a href='projects/"+project.url+"' class='project title-is--visible title-is--alternating title-is--dark thumbnail-is--medium thumbnail-is--medium-alternating title-align--middle title-justify--left'>\
             <div class='project-name'>\
               <div class='project-title'>"+project.title+"</div>\
               <div class='project-subtitle'>"+project.subtitle+"</div>\
+              <div class='location'>📍 "+project.location+"</div>\
             </div>\
             <div class='image-container'>\
               <img src='img/"+project.img+"'>\
@@ -239,13 +252,16 @@
     projects_grid_html = ''
     projects.forEach((project) => {
       projects_grid_html = projects_grid_html.concat(
-        "<a href='"+project.url+"' class='project title-is--on-thumbnail title-is--dark thumbnail-is--small thumbnail-is--small title-align--center title-justify--center'>\
+        "<a href='projects/"+project.url+"' class='project title-is--on-thumbnail title-is--dark thumbnail-is--small thumbnail-is--small title-align--center title-justify--center'>\
           <div class='project-name'>\
             <div class='ufo--project-title-container'>\
               <div class='project-title'>"+project.title+"</div>\
             </div>\
             <div class='ufo--project-title-container'>\
               <div class='project-subtitle'>"+project.subtitle+"</div>\
+            </div>\
+            <div class='ufo--project-title-container'>\
+              <div class='location'>📍 "+project.location+"</div>\
             </div>\
           </div>\
           <div class='image-container'>\
