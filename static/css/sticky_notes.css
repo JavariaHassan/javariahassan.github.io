@@ -1,0 +1,56 @@
+ul.sticky_notes, .sticky_notes li{
+  list-style:none;
+}
+
+ul.sticky_notes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
+}
+
+ul.sticky_notes li a{
+  background: #fafcb0;
+  display:block;
+  /* height:10em; */
+  width:15em;
+  padding:1em;
+  box-shadow: 3px 3px 3px rgba(207, 214, 221, 0.7);
+  transform: rotate(-6deg);
+  transition: transform .15s linear;
+}
+
+ul.sticky_notes li a p {
+  font-family: var(--p1Font);
+  font-size: var(--p1Size);
+  font-weight: var(--p1Weight);
+  font-style: var(--p1Style);
+  line-height: var(--p2Height);
+  color: var(--p1Color);
+  margin-bottom: 0.5em;
+}
+
+ul.sticky_notes li:nth-child(even) a{
+  transform:rotate(3deg);
+  position:relative;
+  top:5px;
+  background:#F8CED7;
+}
+
+ul.sticky_notes li:nth-child(3n) a{
+  transform:rotate(-2deg);
+  position:relative;
+  top:-5px;
+  background:rgb(216, 216, 255);
+}
+
+ul.sticky_notes li:nth-child(4n) a{
+  background:#d1eee3;
+}
+
+ul.sticky_notes li a:hover,ul li a:focus{
+  transform: scale(1.1);
+  position:relative;
+  z-index:5;
+}

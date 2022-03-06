@@ -20,11 +20,15 @@
   </script>
 
   <link rel="stylesheet" href="../case-study.css">
+  <link rel="stylesheet" href="../static/css/sticky_notes.css">
 
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <style>
      :root {
@@ -69,7 +73,7 @@
       --p2Weight: normal;
       --p2Style: normal;
       --p2Size: 16px;
-      --p2Height: 16px;
+      --p2Height: 25px;
       --projectTitleFont: "Rubik";
       --projectTitleColor: #252829;
       --projectTitleWeight: bold;
@@ -110,7 +114,6 @@
         /* --p1Size: 18px;
         --p1Height: 30px; */
         --p2Size: 16px;
-        --p2Height: 19px;
         --projectTitleSize: 88px;
         --projectTitleHeight: 91px;
         --projectSubTitleSize: 22px;
@@ -217,7 +220,7 @@
       <section class="ufo--case-study-section p_section p_section--text" style=" ">
         <div class="ufo--p-container-fluid">
           <div class="text-container">
-            <h3>Overview</h3>
+            <h3>✏️ Overview</h3>
             <p>
               I am working with a group of researchers at the <a target="_blank" href="https://lit.gse.harvard.edu/">Learning, Innovation, and Technology lab</a> based at the Harvard Graduate School of Education to develop a <a target="_blank" href="https://mmla.gse.harvard.edu/">multimodal data collection
               website</a>. The website uses state-of-the-art machine learning algorithms to collect data on students’ body posture, hand gestures, attention, emotions, and physiological states. The application is currently being used by 60 Harvard graduate
@@ -230,7 +233,7 @@
       <section class="ufo--case-study-section p_section p_section--text" style=" ">
         <div class="ufo--p-container-fluid">
           <div class="text-container">
-            <h3>My Role</h3>
+            <h3>👩🏻‍💻 My Role</h3>
             <p>
               I am the team lead for this project. I researched the most effective models to use in the application, developed the frontend for 11/15 tools currently available on the website, architected and developed the backend, and deployed the application. I also
               provided technical guidance and mentorship to team members.
@@ -242,7 +245,7 @@
       <section class="ufo--case-study-section p_section p_section--text" style=" ">
         <div class="ufo--p-container-fluid">
           <div class="text-container">
-            <h3>Background</h3>
+            <h3>🔎 Background</h3>
             <p>
               Data has proven valuable in understanding student learning processes and uncovering factors that most affect learning outcomes. Recently, educational researchers have become more interested in new tools for capturing detailed learning trajectories, which
               has led to the creation of a new methodology: Multimodal Learning Analytics (MMLA), involving the computational analysis of multimodal data. Generally, MMLA research focuses on using high-frequency sensors and wearable tracking devices,
@@ -255,18 +258,53 @@
       <section class="ufo--case-study-section p_section p_section--text" style=" ">
         <div class="ufo--p-container-fluid">
           <div class="text-container">
-            <h3>The Problem</h3>
+            <h3>🚩 The Problem</h3>
             <p>
               While MMLA is a promising field, it is not a widely used methodology in practice because of the specialized equipment and technical knowledge required to collect, process, and analyze multimodal datasets. Multimodal data collection, in particular, involves
               the use of a combination of physical sensors, proprietary tools, and external contractors, which pose the following challenges:
+            </p>
+          </div>
+        </div>
+      </section>
 
-              <ul>
-                <li><b>Affordability: </b>current sensor hardware is generally not affordable by researchers and teachers. This restricts multimodal data research to well-funded teams or more commercially lucrative research areas.</li>
-                <li><b>Accessibility: </b>The high-effort and logistically challenging processes of data collection and analysis restrict access to users with a strong technical background.</li>
-                <li><b>Participant Effects: </b>Physical sensors can be invasive for participants and lead to Hawthorne effects and similar biases entering data.</li>
-                <li><b>Limited research potential: </b>The complexity and cost of the data collection process make it difficult to develop a system of frequent assessment and feedback, which is an essential process in education.</li>
-              </ul>
+      <section id="section-2" class="ufo--case-study-section p_section" style="padding-top: 20px;  padding-bottom: 20px;">
+        <div class="ufo--p-container-fluid">
+            <div class="text-container">
+                <div class="ufo--basic-text-area">
+                  <ul class="sticky_notes">
+                    <li>
+                      <a>
+                        <p><b>💰 Affordability</b></p>
+                        <p>Current sensor hardware is generally not affordable by researchers and teachers. This restricts multimodal data research to well-funded teams or more commercially lucrative research areas.</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <p><b>🔒 Accessibility</b></p>
+                        <p>The high-effort and logistically challenging processes of data collection and analysis restrict access to users with a strong technical background.</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <p><b>👤 Participant Effects</b></p>
+                        <p>Physical sensors can be invasive for participants and lead to Hawthorne effects and similar biases entering data.</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <p><b>❗ Limited research potential</b></p>
+                        <p>The complexity and cost of the data collection process make it difficult to develop a system of frequent assessment and feedback, which is an essential process in education.</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+      </section>
 
+      <section class="ufo--case-study-section p_section p_section--text" style=" ">
+        <div class="ufo--p-container-fluid">
+          <div class="text-container">
               However, with advances in computer vision, machine learning, and computer hardware, multimodal data collection has allowed for new, simplifying possibilities. For instance, computer vision algorithms can now accurately predict heart rate by computing
               minute skin tone differentials. More broadly, machine learning algorithms can now be used to develop easy-to-use and low-cost alternatives to conventional multimodal data collection.
             </p>
@@ -277,7 +315,7 @@
       <section class="ufo--case-study-section p_section p_section--text" style=" ">
         <div class="ufo--p-container-fluid">
           <div class="text-container">
-            <h3>The Goal</h3>
+            <h3>🎯 The Goal</h3>
             <p>
               Our goal is to democratize multimodal data collection using advanced machine learning algorithms behind a user-friendly interface. We want to design a more intuitive, low-cost, and ethical solution compared to traditionally used physical sensor technologies.
             </p>
@@ -288,7 +326,7 @@
       <section class="ufo--case-study-section p_section p_section--text" style=" ">
         <div class="ufo--p-container-fluid">
           <div class="text-container">
-            <h3>Our Solution</h3>
+            <h3>🧩 Our Solution</h3>
             <p>
               We developed the EZ-MMLA toolkit, which is a website for collecting multimodal data via video and audio input captured either in real-time or uploaded for post-processing. It is free to use and open to the public, so it can be used by all educational
               practitioners and researchers to collect multimodal student data. The types of data currently collected through the website are:
@@ -321,7 +359,7 @@
       <section class="ufo--case-study-section p_section p_section--text" style=" ">
         <div class="ufo--p-container-fluid">
           <div class="text-container">
-            <h3>User Feedback</h3>
+            <h3>✍️ User Feedback</h3>
             <p>
               In Fall 2020, the EZ-MMLA toolkit was used to teach a Multimodal Learning Analytics course to students at the Harvard Graduate School of Education, in combination with a learning portal (this specific application of our work, called the LIT Learning Portal,
               is described in more detail over here). Students used both the EZ-MMLA toolkit and the learning portal as part of an adapted version of an in-person course that had transitioned online because of the ongoing COVID-19 pandemic.
@@ -337,7 +375,7 @@
       <section class="ufo--case-study-section p_section p_section--text" style=" ">
         <div class="ufo--p-container-fluid">
           <div class="text-container">
-            <h3>Summary</h3>
+            <h3>💡 Conclusion</h3>
             <p>
               In summary, this project finds that the results from the preliminary examination are encouraging. The platform has been broadly successful and indicative of how the proposed web-based approach might be viewed as a viable new medium for MMLA. Crucially,
               our findings suggest that there is the potential to overturn the conventional MMLA pipeline and democratize learning research.
