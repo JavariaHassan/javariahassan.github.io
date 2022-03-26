@@ -19,6 +19,17 @@
     gtag('config', 'G-1NG1BPBBQ1');
   </script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(function() {
+      var includes = $('[data-include]')
+      $.each(includes, function() {
+        var file = $(this).data('include') + '.html'
+        $(this).load(file)
+      })
+    })
+  </script>
+
   <link rel="stylesheet" href="style.css">
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -110,23 +121,7 @@
         <div class="ufo--container">
           <div class="ufo--portfolio-page theme_twelve">
             <div class="ufo--page-navbar">
-              <div class="ufo--page-navbar-container">
-                <div style="margin-right: auto;" class="ufo--page-navbar-item selected" data-text="Home">
-                  <div style="padding: 4px 0 4px 0;" onclick="location.href='/'" class="btn active">Home</div>
-                </div>
-                <div class="ufo--page-navbar-item" data-text="Work">
-                  <div onclick="location.href='/#projects'" class="btn active">Projects</div>
-                </div>
-                <div class="ufo--page-navbar-item " data-text="About">
-                  <div onclick="location.href='about.html'" class="btn ">About</div>
-                </div>
-                <div class="ufo--page-navbar-item " data-text="Contact">
-                  <div onclick="location.href='contact.html'" class="btn ">Contact</div>
-                </div>
-                <div class="ufo--page-navbar-item" data-text="Resumé">
-                  <a href="static/files/javaria_hassan_cv.pdf" class="btn">CV</a>
-                </div>
-              </div>
+              <div class="ufo--page-navbar-container" data-include="navbar"></div>
               <div class="ufo--page-navbar-toggle"><span></span><span></span><span></span><span></span></div>
             </div>
           </div>

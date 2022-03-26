@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Javaria's Portfolio - About Me</title>
+  <title>Javaria's Portfolio - Publications</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1NG1BPBBQ1"></script>
@@ -76,7 +76,7 @@
       --projectTitleSize: 20px;
       --projectTitleHeight: 23px;
       --projectSubTitleSize: 16px;
-      --projectSubTitleHeight: 19px;
+      --projectSubTitleHeight: 22px;
     }
     
     .profile-footer,
@@ -111,6 +111,36 @@
         --buttonHeight: 15px;
       }
     }
+    
+    ul {
+      list-style: none;
+      margin-left: 1em;
+      padding-left: 0;
+    }
+    
+    li {
+      padding-left: 1em;
+      margin-bottom: 1em;
+      list-style-type: '📄';
+    }
+    
+    li:nth-child(1) {
+      list-style-type: '📚';
+    }
+    
+    li a {
+      color: var(--h1Color);
+    }
+    
+    .key {
+      font-family: var(--projectSubTitleFont);
+      font-size: 15px;
+      font-weight: var(--projectSubTitleWeight);
+      font-style: italic;
+      line-height: var(--projectSubTitleHeight);
+      color: var(--p1Color);
+      margin-bottom: 30px;
+    }
   </style>
 </head>
 
@@ -130,25 +160,36 @@
             <div class="ufo--about-page ufo--about-page-profile_theme_two">
               <div class="ufo--about-header">
                 <div class="about-title">
-                  <h1 class="title">About Me</h1>
+                  <h1 class="title">Publications</h1>
                 </div>
                 <div class="back" onclick="location.href='/'">⟵ Back</div>
               </div>
               <div class="ufo--about-content">
-                <h2>👋 Hi there!</h2>
-                <p></p>
-                <p>
-                  My name is Javaria Hassan 👩🏻‍💻. I'm a master's student at Harvard University studying
-                  <a target="_blank" href="https://www.gse.harvard.edu/masters/programs/ldit">Technology, Learning Design, and Innovation</a> in 📍 Cambridge, Massachusetts. I work at the intersection of software engineering, applied human-computer interaction
-                  research, machine learning, and education to make information and technology accessible, enjoyable, and useful. I am currently working on the design of multimodal data collection platforms at the <a target="_blank" href="https://lit.gse.harvard.edu/">Learning, Innovation and Technology Lab</a>.
-                </p>
-
-                <p>I completed my undergraduate education 🎓 in Computer Science from <a target="_blank" href="https://lums.edu.pk/">LUMS University</a>, Pakistan, in 2020. During college, I worked at the <a target="_blank" href="https://tpi.lums.edu.pk/">Technology for People Intiative lab </a>(research
-                  assistant) and <a target="_blank" href="https://www.techlogix.com/">Techlogix</a> (User Experience intern). After graduating, I started my role as a User Experience Engineer at <a target="_blank" href="https://datasciencedojo.com/">Data Science Dojo</a>                  📈, one of the leading educational organizations providing training in data science, data analytics, and machine learning. I have also been serving as a design lead for the
-                  <a target="_blank" href="https://pwic.org/">Pakistani Women in Computing</a> organisation, which is a global community of women from Pakistan who work towards creating opportunities for other women in the tech space.
-                </p>
-
-                <p>Outside of academics, I enjoy painting 🎨, exploring Boston 🦞, and of course, like any good Pakistani, having a cup of tea ☕ with my friends and family.</p>
+                <p class="key">
+                  📚 = Journal Article, Book Chapter
+                  <br>📄 = Peer-Reviewed Conference Proceedings</p>
+                <ul>
+                  <li>
+                    <b><a href="https://www.mdpi.com/1445694" target="_blank">Augmenting Social Science Research with Multimodal Data Collection: the EZ-MMLA Toolkit.</a></b>
+                    <br>Schneider, B., Hassan, J., & Sung, G. (2022).
+                    <br>Sensors, 22(2), 568.
+                  </li>
+                  <li>
+                    <b>What Matters most for Learning from Online Videos, Seeing the Instructor’s Face or Gaze? Their Impact on Learning and Instructor- Student Behavioral Synchrony.</b>
+                    <br>Schneider, B., Sung, G., Hassan, J., & Bhinder, H. (accepted).
+                    <br>International Conference on Computer Supported Collaborative Learning.
+                  </li>
+                  <li>
+                    <b>How’s the Video?: Automated Tracking of Affect for Out-of-classroom Learning.</b>
+                    <br>Sung, C., Hassan, J., & Schneider, B. (accepted).
+                    <br>International Conference of the Learning Sciences.
+                  </li>
+                  <li>
+                    <b><a href="https://dl.acm.org/doi/10.1145/3448139.3448201" target="_blank">Multimodal Data Collection Made Easy: The EZ-MMLA Toolkit: A data collection website that provides educators and researchers with easy access to multimodal data streams.</a></b>
+                    <br>Hassan, J., Leong, J. & Schneider, B. (2021).
+                    <br>In LAK21: 11th International Learning Analytics and Knowledge Conference (pp. 579-585).
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

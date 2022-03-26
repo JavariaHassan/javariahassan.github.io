@@ -19,6 +19,17 @@
     gtag('config', 'G-1NG1BPBBQ1');
   </script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(function() {
+      var includes = $('[data-include]')
+      $.each(includes, function() {
+        var file = $(this).data('include') + '.html'
+        $(this).load(file)
+      })
+    })
+  </script>
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style_extra.css">
 
@@ -126,23 +137,7 @@
       <div class="profile-page profile_theme_two profile--hp">
         <div class="ufo--container">
           <div class="ufo--page-navbar">
-            <div class="ufo--page-navbar-container">
-              <div style="margin-right: auto;" class="ufo--page-navbar-item selected" data-text="Home">
-                <div style="padding: 4px 0 4px 0; width: fit-content;" onclick="location.href='/'" class="btn active">Home</div>
-              </div>
-              <div class="ufo--page-navbar-item" data-text="Work">
-                <div onclick="location.href='/#projects'" class="btn active">Projects</div>
-              </div>
-              <div class="ufo--page-navbar-item " data-text="About">
-                <div onclick="location.href='about.html'" class="btn ">About</div>
-              </div>
-              <div class="ufo--page-navbar-item " data-text="Contact">
-                <div onclick="location.href='contact.html'" class="btn ">Contact</div>
-              </div>
-              <div class="ufo--page-navbar-item" data-text="Resumé">
-                <a href="static/files/javaria_hassan_cv.pdf" class="btn">CV</a>
-              </div>
-            </div>
+            <div class="ufo--page-navbar-container" data-include="navbar"></div>
             <div class="ufo--page-navbar-toggle"><span></span><span></span><span></span><span></span></div>
           </div>
           <div class="ufo--user-profile-info profile_theme_two">
@@ -166,15 +161,6 @@
                       <i class="fa fa-github fa-lg"></i>
                     </a>
                   </div>
-                  <!-- <div class="profile-button contact-button ">
-                    <div onclick="location.href='about.html'" class="btn">About</div>
-                  </div>
-                  <div class="profile-button contact-button ">
-                    <div onclick="location.href='contact.html'" class="btn">Contact</div>
-                  </div>
-                  <div class="profile-button resume-button">
-                    <a href="static/files/javaria_hassan_cv.pdf" class="btn">CV</a>
-                  </div> -->
                 </div>
               </div>
             </div>

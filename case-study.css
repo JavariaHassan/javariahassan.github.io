@@ -4740,3 +4740,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.ufo--page-navbar-container:first-child div {
+  width: fit-content;
+}
