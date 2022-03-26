@@ -36147,7 +36147,7 @@ button[data-v-0191b163]:disabled {
   position: relative;
   display: inline-flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between
 }
 
@@ -36205,7 +36205,7 @@ button[data-v-0191b163]:disabled {
 }
 
 @media (max-width:768px) {
-  .ufo--page-navbar-container.on div:first-child {
+  .ufo--page-navbar-container div:first-child {
     margin-right: 0 !important;
   }
   .ufo--page-navbar-item {

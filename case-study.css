@@ -335,11 +335,8 @@ body {
 
 @media (min-width:768px) {
   .p_section--header-main .project-owner {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 15px 24px
+    padding: 0;
+    /* padding: 15px 24px */
   }
 }
 
@@ -4711,4 +4708,35 @@ body {
 
 .image-gallery.carousel .gallery-item[class*="--shadow"] {
   padding: 20px 0
+}
+
+.my-ufo--page-navbar-container {
+  padding-top: 40px
+}
+
+@media (max-width:768px) {
+  .my-ufo--page-navbar-container {
+    padding-top: 0;
+  }
+}
+
+.ufo--page-navbar-container:not(.on) div:not(:first-child) {
+  display: none;
+}
+
+.ufo--page-navbar-item .btn {
+  color: #74808a;
+}
+
+@media (max-width: 768px) {
+  .ufo--page-navbar-toggle span {
+    background-color: #74808a;
+  }
+}
+
+.ufo--container {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }

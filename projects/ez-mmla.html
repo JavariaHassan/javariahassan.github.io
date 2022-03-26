@@ -19,6 +19,7 @@
     gtag('config', 'G-1NG1BPBBQ1');
   </script>
 
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../case-study.css">
   <link rel="stylesheet" href="../static/css/sticky_notes.css">
 
@@ -192,12 +193,27 @@
     <div class="ufo--case-study-container project">
 
       <section id="section-0" class="ufo--case-study-section p_section p_section--header-main  " style="background-color: #aecdbf; margin-bottom: 40px;">
-        <div class="ufo--p-container-fluid ">
-          <div class="project-owner">
-            <div class="owner" onclick="window.location.href='../'">
-              <div class="owner-info ">
-                <div class="owner-name">Home</div>
+        <div class="ufo--container">
+          <div class="my-ufo--page-navbar-container">
+            <div class="ufo--page-navbar">
+              <div class="ufo--page-navbar-container">
+                <div style="margin-right: auto;" class="ufo--page-navbar-item selected" data-text="Home">
+                  <div style="padding: 4px 0 4px 0; width: fit-content;" onclick="location.href='/'" class="btn active">Home</div>
+                </div>
+                <div class="ufo--page-navbar-item" data-text="Work">
+                  <div onclick="location.href='/#projects'" class="btn active">Projects</div>
+                </div>
+                <div class="ufo--page-navbar-item " data-text="About">
+                  <div onclick="location.href='about.html'" class="btn ">About</div>
+                </div>
+                <div class="ufo--page-navbar-item " data-text="Contact">
+                  <div onclick="location.href='contact.html'" class="btn ">Contact</div>
+                </div>
+                <div class="ufo--page-navbar-item" data-text="Resumé">
+                  <a href="static/files/javaria_hassan_cv.pdf" class="btn">CV</a>
+                </div>
               </div>
+              <div class="ufo--page-navbar-toggle"><span></span><span></span><span></span><span></span></div>
             </div>
           </div>
 
@@ -386,6 +402,7 @@
     </div>
     <div class="scroll-to-top"></div>
   </main>
+  <script type="text/javascript" src="../static/js/navbar.js"></script>
 </body>
 
 </html>
