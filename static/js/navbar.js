@@ -12,7 +12,6 @@ toggle.onclick = function() {
 
 const navbar_items = document.getElementsByClassName("ufo--page-navbar-item");
 Array.from(navbar_items).forEach(item => {
-  console.log('hey', item.getElementsByTagName('div'));
   try {
     item_child = item.getElementsByTagName('div')[0];
   } catch {
