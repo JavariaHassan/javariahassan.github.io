@@ -9,7 +9,7 @@
   font-family: Rubik, sans-serif;
   font-size: 14px;
   color: #c8c8c8;
-  padding-right: 14px;
+  padding-right: 8px;
   margin: 0;
 }
 
@@ -42,4 +42,55 @@
 
 .toggle .layout div.active {
   background-color: #c8c8c8;
+}
+
+.keywords {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  gap: 5px;
+  font-family: var(--projectSubTitleFont);
+  font-size: 15px;
+  font-weight: var(--projectSubTitleWeight);
+  font-style: var(--projectSubTitleStyle);
+  line-height: var(--projectSubTitleHeight);
+  color: var(--p1Color);
+  margin-top: 10px;
+}
+
+.keyword {
+  width: max-content;
+  border: 1px solid var(--borderColor);
+  background-color: rgb(141 152 161 / 8%);
+  padding: 3px 10px;
+  border-radius: 50px;
+}
+
+.submenu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+}
+
+.submenu select {
+  /* text-transform: uppercase; */
+  color: #b9b9b9;
+  border: 1px solid var(--borderColor);
+  border-radius: 50px;
+  padding: 8px 40px 8px 13px;
+  width: max-content;
+  height: max-content;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+select {
+  position: relative;
+  background-image: linear-gradient(45deg, transparent 50%, #c8c8c8 50%), linear-gradient(135deg, #c8c8c8 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - .5em) .5em;
+  background-size: 5px 5px, 5px 5px, 1.5em 1.5em;
+  background-repeat: no-repeat;
 }

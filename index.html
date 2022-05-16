@@ -169,14 +169,24 @@
           <div id="projects" style="height: 1px;"></div>
           <div class="ufo--user-projects-list">
             <div class="works_line_profile_theme_two"></div>
-            <div class="toggle">
-              <p>VIEW</p>
-              <div class="layout">
-                <div onclick="list_view()" id="toggle_list" class="">
-                  <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m5 0h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m23 0h-14c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h14c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m5 9h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m23 9h-14c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h14c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m5 18h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m23 18h-14c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h14c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path></svg>
-                </div>
-                <div onclick="grid_view()" id="toggle_grid" class="">
-                  <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m5 0h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m5 9h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m5 18h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m14 0h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m14 9h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m14 18h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m23 0h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m23 9h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m23 18h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path></svg>
+            <div class="submenu">
+              <select name="keywords" id="keywords" onchange="filter_keywords()">
+                <option value="FILTER">FILTER</option>
+                  <option value="Software Engineering">Software Engineering</option>
+                  <option value="Human-Computer Interaction">Human-Computer Interaction</option>
+                  <option value="Data Science">Data Science</option>
+                  <option value="Affective Computing">Affective Computing</option>
+                  <option value="Natural Language Processing">Natural Language Processing</option>
+                </select>
+              <div class="toggle">
+                <p>VIEW</p>
+                <div class="layout">
+                  <div onclick="list_view()" id="toggle_list" class="">
+                    <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m5 0h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m23 0h-14c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h14c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m5 9h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m23 9h-14c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h14c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m5 18h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m23 18h-14c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h14c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path></svg>
+                  </div>
+                  <div onclick="grid_view()" id="toggle_grid" class="">
+                    <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m5 0h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m5 9h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m5 18h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m14 0h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m14 9h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m14 18h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m23 0h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m23 9h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path><path d="m23 18h-4c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h4c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1z"></path></svg>
+                  </div>
                 </div>
               </div>
             </div>
@@ -205,41 +215,60 @@
       'title': 'Multimodal Data Collection Made Easy: The EZ-MMLA Toolkit',
       'subtitle': 'A data collection website that provides educators and researchers with easy access to multimodal data streams.',
       'location': 'Harvard University, Learning Innovation and Technology Lab',
+      'keywords': ['Software Engineering', 'Data Science'],
       'img': 'man.png'
     }, {
       'url': 'nonverbal-cues-in-engagement.html',
       'title': 'Effect of Nonverbal Cues in Children’s Engagement During Dialogic Reading',
       'subtitle': 'A study exploring the effect of parents’ nonverbal cues on their child’s engagement during a joint educational reading task.',
       'location': 'MIT Media Lab, Affective Computing Group',
+      'keywords': ['Human-Computer Interaction', 'Affective Computing'],
       'img': 'books.png'
     }, {
       'url': 'learning-portal.html',
       'title': 'LIT Lab’s Learning Portal',
       'subtitle': 'An educational website that teaches multimodal analytics to students and captures their multimodal data in the background.',
       'location': 'Harvard University, Learning Innovation and Technology Lab',
+      'keywords': ['Software Engineering', 'Data Science'],
       'img': 'book-bug.png'
     }, {
       'url': 'focus.html',
       'title': 'FOCUS: A 3D Sound Shooting Game',
       'subtitle': 'A co-designed virtual-space shooting game for the blind and visually impaired.',
       'location': 'LUMS University, Pakistan',
+      'keywords': ['Human-Computer Interaction'],
       'img': 'headphones.png'
     }, {
       'url': 'bias-in-media.html',
       'title': 'GenBi: Curbing Gender Bias in Print Media',
       'subtitle': 'A study of gender portrayals in Pakistan’s print media and the proposal of an application to reduce sexism in the news.',
       'location': 'LUMS University, Technology for People Initiative Lab, Pakistan',
+      'keywords': ['Natural Language Processing'],
       'img': 'gender.png'
     }, ]
 
     projects_list_html = ''
     projects.forEach((project) => {
+      let attribute_keys = project.keywords.join("; ");
       projects_list_html = projects_list_html.concat(
-        "<a href='projects/" + project.url + "' class='project title-is--visible title-is--alternating title-is--dark thumbnail-is--medium thumbnail-is--medium-alternating title-align--middle title-justify--left'>\
+        "<a data-keywords='" + attribute_keys + "' href='projects/" + project.url + "' class='project title-is--visible title-is--alternating title-is--dark thumbnail-is--medium thumbnail-is--medium-alternating title-align--middle title-justify--left'>\
             <div class='project-name'>\
               <div class='project-title'>" + project.title + "</div>\
-              <div class='project-subtitle'>" + project.subtitle + "</div>\
-              <div class='location'>📍 " + project.location + "</div>\
+              <div class='project-subtitle'>" + project.subtitle + "</div>"
+      )
+      projects_list_html = projects_list_html.concat(
+        "<div class='keywords'>"
+      );
+      project.keywords.forEach((keyword) => {
+        projects_list_html = projects_list_html.concat(
+          "<div class='keyword'>" + keyword + "</div>"
+        )
+      });
+      projects_list_html = projects_list_html.concat(
+        "</div>"
+      );
+      projects_list_html = projects_list_html.concat(
+        "     <div class='location'>📍 " + project.location + "</div>\
             </div>\
             <div class='image-container'>\
               <img src='img/" + project.img + "'>\
@@ -251,16 +280,30 @@
 
     projects_grid_html = ''
     projects.forEach((project) => {
+      let attribute_keys = project.keywords.join("; ");
       projects_grid_html = projects_grid_html.concat(
-        "<a href='projects/" + project.url + "' class='project title-is--on-thumbnail title-is--dark thumbnail-is--small thumbnail-is--small title-align--center title-justify--center'>\
+        "<a data-keywords='" + attribute_keys + "' href='projects/" + project.url + "' class='project title-is--on-thumbnail title-is--dark thumbnail-is--small thumbnail-is--small title-align--center title-justify--center'>\
           <div class='project-name'>\
             <div class='ufo--project-title-container'>\
               <div class='project-title'>" + project.title + "</div>\
             </div>\
             <div class='ufo--project-title-container'>\
               <div class='project-subtitle'>" + project.subtitle + "</div>\
-            </div>\
-            <div class='ufo--project-title-container'>\
+            </div>"
+      )
+      projects_grid_html = projects_grid_html.concat(
+        "<div class='keywords'>"
+      );
+      project.keywords.forEach((keyword) => {
+        projects_grid_html = projects_grid_html.concat(
+          "<div class='keyword'>" + keyword + "</div>"
+        )
+      });
+      projects_grid_html = projects_grid_html.concat(
+        "</div>"
+      );
+      projects_grid_html = projects_grid_html.concat(
+        "<div class='ufo--project-title-container'>\
               <div class='location'>📍 " + project.location + "</div>\
             </div>\
           </div>\
@@ -280,6 +323,29 @@
     function grid_view() {
       toggle_view("grid");
       setCookie("project_view", "grid", 365);
+    }
+  </script>
+  <script>
+    const projects = document.querySelectorAll('[data-keywords]');
+
+    function filter_keywords() {
+      let keywords = document.getElementById("keywords");
+      let value = keywords.value;
+      if (value == "FILTER") {
+        console.log('hey der');
+        projects.forEach(project => {
+          project.style.display = "";
+        })
+      } else {
+        projects.forEach(project => {
+          let project_keys = project.dataset.keywords.split('; ');
+          if (project_keys.includes(value)) {
+            project.style.display = "";
+          } else {
+            project.style.display = "none";
+          }
+        })
+      }
     }
   </script>
 
