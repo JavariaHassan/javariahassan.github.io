@@ -80,6 +80,7 @@
   padding: 8px 40px 8px 13px;
   width: max-content;
   height: max-content;
+  margin-bottom: 10px;
 }
 
 select {
@@ -93,4 +94,25 @@ select {
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - .5em) .5em;
   background-size: 5px 5px, 5px 5px, 1.5em 1.5em;
   background-repeat: no-repeat;
+}
+
+.table-results {
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 90%;
+  font-size: small;
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table-results tr,
+.table-results td {
+  border: 1px solid lightgray;
+  padding: 8px;
+}
+
+.table-results tr:nth-child(even) {
+  background-color: rgb(231, 231, 231);
 }

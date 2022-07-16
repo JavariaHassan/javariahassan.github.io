@@ -32,6 +32,7 @@
   </script>
 
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../style_extra.css">
   <link rel="stylesheet" href="../case-study.css">
   <link rel="stylesheet" href="../static/css/sticky_notes.css">
 
@@ -180,7 +181,7 @@
     }
     
     @media only screen and (max-width: 768px) {
-      td {
+      .hero-main-content td {
         display: block;
       }
       .hero-text {
@@ -235,7 +236,7 @@
             <h3>✏️ Overview</h3>
             <p>
               I am working with a group of researchers at the <a target="_blank" href="https://lit.gse.harvard.edu/">Learning, Innovation, and Technology lab</a> based at the Harvard Graduate School of Education to develop a <a target="_blank" href="https://mmla.gse.harvard.edu/">multimodal data collection
-              website</a>. The website uses state-of-the-art machine learning algorithms to collect data on students’ body posture, hand gestures, attention, emotions, and physiological states. The application is currently being used by 60 Harvard graduate
+              website</a>. The website uses state-of-the-art machine learning algorithms to collect data on students’ body posture, hand gestures, attention, emotions, and physiological states. The application is currently being used by 100+ Harvard graduate
               students enrolled in a Multimodal Analytics course.
             </p>
           </div>
@@ -247,8 +248,8 @@
           <div class="text-container">
             <h3>👩🏻‍💻 My Role</h3>
             <p>
-              I am the team lead for this project. I researched the most effective models to use in the application, developed the frontend for 11/15 tools currently available on the website, architected and developed the backend, and deployed the application. I also
-              provided technical guidance and mentorship to team members.
+              I am the team lead for this project. I researched the most effective models to use in the application, developed the frontend for the majority of tools currently available on the website, architected and developed the backend, and deployed the application.
+              I also provided technical guidance and mentorship to team members.
             </p>
           </div>
         </div>
@@ -360,7 +361,7 @@
               a multimodal data type. When a user selects a tool, they are directed to a page where they can execute data collection in real-time through a webcam/microphone feed or upload a recording. Once the tracking is complete, the user is prompted
               to download the data as a CSV file.
 
-              <br><br> <span style="font-weight: bold;">Comparing the EZ-MMLA toolkit with traditional data collection tools</span>
+              <br><br> <span style="font-weight: bold !important;">Comparing the EZ-MMLA toolkit with traditional data collection tools</span>
               <br>While computer-vision algorithms provide us with new ways of capturing multimodal data, they are not interchangeable with physical sensors. Generally, webcam-based data collection tools tend to be less accurate than dedicated sensors,
               but they are easier to access, distribute, setup, and use. They have also been steadily improving, as consumer hardware is becoming faster, higher resolution, and more affordable.
             </p>
@@ -373,12 +374,76 @@
           <div class="text-container">
             <h3>✍️ User Feedback</h3>
             <p>
-              In Fall 2020, the EZ-MMLA toolkit was used to teach a Multimodal Learning Analytics course to students at the Harvard Graduate School of Education, in combination with a learning portal (this specific application of our work, called the LIT Learning Portal,
-              is described in more detail over here). Students used both the EZ-MMLA toolkit and the learning portal as part of an adapted version of an in-person course that had transitioned online because of the ongoing COVID-19 pandemic.
+              There are several sources of user feedback that were collected during the semester. One source is anonymous weekly survey data from students: one question asked students to describe an aspect of class they enjoyed that week, the second was an aspect of
+              class they felt needed improvement, and the third prompted students to report their experiences using the EZ-MMLA toolkit. Additionally, we included a usability instrument in the survey. Students were also prompted to give their feedback
+              during class, sometimes orally and sometimes in a chat room.
 
-              <br><br>We gathered feedback throughout the semester using short open-ended surveys. Students gave positive feedback on collecting data first-hand and expressed a strong interest in analyzing data. Many said they appreciated “having the
-              opportunity to work with data collection directly [since] it helped [them] understand the complete process of data mining much more than [they] would have”. Additionally, students became more engaged in the underlying models and explored
-              broader implications of their observations. Specifically, students reported they grew more interested in “what multimodal sensors can tell us about our teaching and learning.”
+              <br><br>A total of 504 open-ended response sets were collected over the course of 12 weeks, and 82 open-ended comments were identified as being relevant to the EZ-MMLA toolkit. We conducted thematic analysis on the data to identify key themes.
+              Taking an inductive approach, preliminary codes were assigned to the data, which were then iteratively organized into two main themes (positive, negative) and several sub-themes on how students found the experience, shown briefly in the
+              table below.
+            </p>
+          </div>
+
+          <br><br>
+          <div style="overflow-x:auto;">
+            <table class="table-results">
+              <caption>Some of the main themes identified from 504 response sets that were collected over the course of 12 weeks.</caption>
+              <tbody>
+                <tr>
+                  <td style="font-family: 'Open Sans'; font-weight: bold; width: 20%;">Theme</td>
+                  <td style="font-family: 'Open Sans'; font-weight: bold;">Examples</td>
+                </tr>
+                <tr>
+                  <td>Authenticity</td>
+                  <td>“I liked that it was grounded in something real-world and relevant to the class”</td>
+                </tr>
+                <tr>
+                  <td>Accessibility</td>
+                  <td>“The fact that we got to actually use the Emotion Detecting tool and analyze it this week far exceeded my expectations in terms of what is possible to do as a student in our 3rd week of class!”</td>
+                </tr>
+                <tr>
+                  <td>Technical Issues</td>
+                  <td>“The eye tracking data collection website tend to make my laptop run slowly.”</td>
+                </tr>
+                <tr>
+                  <td>Learning Curve</td>
+                  <td>“When I was collecting eye-gaze data from gazecloud, it took me several tries to figure out how I can both read and let gazecloud track my eyes.”
+                  </td>
+                </tr>
+                <tr>
+                  <td>Data Quality</td>
+                  <td>“I wish I was made more cognizant of how [the] quality [of] the data being collected is as I was being recorded (because I forgot a lot of the time). If there was a camera to show us how the camera is detecting our position, I might
+                    change my behaviors so that I have my webcam screen on/not be leaning back out of view”
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="text-container">
+            <p>
+              <br><br><em>Usability.</em> To assess the usability of the website, we used Brooke’s “quick and dirty” System Usability Scale (SUS) which comprises 10 questions that users rate on a 5 point scale from “Strongly Disagree” to “Strongly Agree”.
+              Questions for example included “I found the system unnecessarily complex” or “I would imagine that most people would learn to use this system very quickly”. The final score is between 0 and 100, representing 7 levels from worst to best.
+              29 students completed the SUS instrument. The final score of the EZ-MMLA website is 71.94 (SD = 14.84). The lowest scoring question was “I found the website unnecessarily complex” (mean = 3.6), which suggests that the website could be simplified
+              from a user’s standpoint.
+
+              <br><br><em>Authenticity.</em> Students seemed to appreciate that the data collected by the toolkit was, in the words of one student, “massive datasets that are generated by real MMLA tools.” Students were motivated that the data was authentic,
+              and were also able to get their hands dirty in data analytics — one student noted that “the opportunity to work with data collection directly…helps me to understand [the] limitations of data.” This perceived authenticity presents an opportunity
+              for the EZ-MMLA toolkit in data science education; it is well known that authentic problems that are directly related to students foster engagement, motivation and deep understanding.
+
+              <br><br><em>Accessibility.</em> Several students noted that the functionalities and data collected by the toolkit were intuitive to access and understand, despite their lack of prior expertise. One student stated that the activity using
+              the emotion detection functionality of the toolkit “far exceeded my expectations in terms of what is possible to do as a student in our 3rd week of class”, and another felt the tool was “simple and straightforward to use”.
+
+              <br><br><em>Technical issues.</em> The most prominent negative theme that emerged, on the other hand, was the frustration caused by technical issues. The most common issue was the website simply being slow and laggy for some students. A
+              few reported that their laptops were running slower than usual when running the toolkit. The downloading function also caused some trouble, where webcam data could only be accessed by one application at a time.
+
+              <br><br><em>Steep learning curve.</em> While some functionalities felt intuitive and accessible for some students, other functions felt difficult to grasp for others. Some students reported re-attempting data collection a few times before
+              getting it right, and asked questions such as, “how can we check if data is being correctly collected?” Some students explicitly asked for examples and additional documentation. For instance, on collecting data for skeletal tracking, one
+              comment was “I wish we knew an average number of frames that should be collected”.
+
+              <br><br><em>Data quality.</em> A few comments pointed out the limitations of the data collected by the toolkit. One type of limitation arose from the unique context of students being privy to the exact setup and inner workings of the subject
+              when working with their own data. This included concerns about how they had been conscious of the sensors and modeled their behavior to get ‘good’ data, or how they were concerned about the data being inaccurate because they were using a
+              dual monitor setup, or had repeated the same experiment a few times before collecting the final dataset.
             </p>
           </div>
         </div>
@@ -389,7 +454,7 @@
           <div class="text-container">
             <h3>💡 Conclusion</h3>
             <p>
-              In summary, this project finds that the results from the preliminary examination are encouraging. The platform has been broadly successful and indicative of how the proposed web-based approach might be viewed as a viable new medium for MMLA. Crucially,
+              In summary, this project finds that the results from the preliminary examination are encouraging. The platform has been broadly successful and indicative of how the proposed web-based approach might be viewed as a viable new medium for MMLA. Importantly,
               our findings suggest that there is the potential to overturn the conventional MMLA pipeline and democratize learning research.
             </p>
           </div>
