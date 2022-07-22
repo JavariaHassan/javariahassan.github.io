@@ -4744,3 +4744,29 @@ body {
 .ufo--page-navbar-container:first-child div {
   width: fit-content;
 }
+
+
+/* 
+img {
+  transition: .2s ease;
+  transition-property: transform, filter;
+}
+
+img:hover {
+  transform: scale(1.03);
+} */
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.highlight {
+  background: #fdf2d1 50%;
+}
+
+.highlight:hover {
+  background: #ffecb1 50%;
+}
