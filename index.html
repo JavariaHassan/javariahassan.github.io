@@ -221,73 +221,90 @@
       'subtitle': 'A data collection website that provides educators and researchers with easy access to multimodal data streams.',
       'location': 'Harvard University, Learning Innovation and Technology Lab',
       'keywords': ['Data Science', 'Human-Computer Interaction', 'Software Engineering'],
-      'img': 'man.png'
+      'img': 'man.png',
+      'visible': true
     }, {
       'url': 'nonverbal-cues-in-engagement.html',
       'title': 'Effect of Nonverbal Cues in Children’s Engagement During Dialogic Reading',
       'subtitle': 'A study exploring the effect of parents’ nonverbal cues on their child’s engagement during a joint educational reading task.',
       'location': 'MIT Media Lab, Affective Computing Group',
-      'keywords': ['Human-Computer Interaction', 'Affective Computing'],
-      'img': 'books.png'
+      'keywords': ['Affective Computing'],
+      'img': 'books.png',
+      'visible': true
     }, {
       'url': 'learning-portal.html',
       'title': 'LIT Lab’s Learning Portal',
       'subtitle': 'An educational website that teaches multimodal analytics to students and captures their multimodal data in the background.',
       'location': 'Harvard University, Learning Innovation and Technology Lab',
-      'keywords': ['Human-Computer Interaction', 'Data Science', 'Software Engineering'],
-      'img': 'book-bug.png'
+      'keywords': ['Data Science', 'Software Engineering'],
+      'img': 'book-bug.png',
+      'visible': true
     }, {
       'url': 'focus.html',
       'title': 'FOCUS: A 3D Sound Shooting Game',
       'subtitle': 'A co-designed virtual-space shooting game for the blind and visually impaired.',
       'location': 'LUMS University, Pakistan',
       'keywords': ['Human-Computer Interaction'],
-      'img': 'headphones.png'
+      'img': 'headphones.png',
+      'visible': true
     }, {
       'url': 'bias-in-media.html',
       'title': 'GenBi: Curbing Gender Bias in Print Media',
       'subtitle': 'A study of gender portrayals in Pakistan’s print media and the proposal of an application to reduce sexism in the news.',
       'location': 'LUMS University, Technology for People Initiative Lab, Pakistan',
       'keywords': ['Natural Language Processing'],
-      'img': 'gender.png'
+      'img': 'gender.png',
+      'visible': true
+    }, {
+      'url': 'counting-in-the-kitchen.html',
+      'title': 'Counting in the Kitchen',
+      'subtitle': 'A study of gender portrayals in Pakistan’s print media and the proposal of an application to reduce sexism in the news.',
+      'location': 'Harvard University',
+      'keywords': ['Human-Computer Interaction', 'Software Engineering'],
+      'img': 'counting-kitchen.png',
+      'visible': false
     }]
 
-    projects_list_html = ''
-    projects.forEach((project) => {
-      let attribute_keys = project.keywords.join("; ");
-      projects_list_html = projects_list_html.concat(
-        "<a data-keywords='" + attribute_keys + "' href='projects/" + project.url + "' class='project title-is--visible title-is--alternating title-is--dark thumbnail-is--medium thumbnail-is--medium-alternating title-align--middle title-justify--left'>\
+    function insertProjects(filter) {
+      projects_list_html = ''
+      projects.forEach((project) => {
+        if ((project.keywords.includes(filter) || filter == "FILTER") && project.visible == true) {
+          let attribute_keys = project.keywords.join("; ");
+          projects_list_html = projects_list_html.concat(
+            "<a data-keywords='" + attribute_keys + "' href='projects/" + project.url + "' class='project title-is--visible title-is--alternating title-is--dark thumbnail-is--medium thumbnail-is--medium-alternating title-align--middle title-justify--left'>\
             <div class='project-name'>\
               <div class='project-title'>" + project.title + "</div>\
               <div class='project-subtitle'>" + project.subtitle + "</div>"
-      )
-      projects_list_html = projects_list_html.concat(
-        "<div class='keywords'>"
-      );
-      project.keywords.forEach((keyword) => {
-        projects_list_html = projects_list_html.concat(
-          "<div class='keyword'>" + keyword + "</div>"
-        )
-      });
-      projects_list_html = projects_list_html.concat(
-        "</div>"
-      );
-      projects_list_html = projects_list_html.concat(
-        "     <div class='location'>📍 " + project.location + "</div>\
+          )
+          projects_list_html = projects_list_html.concat(
+            "<div class='keywords'>"
+          );
+          project.keywords.forEach((keyword) => {
+            projects_list_html = projects_list_html.concat(
+              "<div class='keyword'>" + keyword + "</div>"
+            )
+          });
+          projects_list_html = projects_list_html.concat(
+            "</div>"
+          );
+          projects_list_html = projects_list_html.concat(
+            "     <div class='location'>📍 " + project.location + "</div>\
             </div>\
             <div class='image-container'>\
               <img src='img/" + project.img + "'>\
             </div>\
           </a>"
-      )
-    });
-    document.getElementById('projects-list').innerHTML = projects_list_html;
+          )
+        }
+      });
+      document.getElementById('projects-list').innerHTML = projects_list_html;
 
-    projects_grid_html = ''
-    projects.forEach((project) => {
-      let attribute_keys = project.keywords.join("; ");
-      projects_grid_html = projects_grid_html.concat(
-        "<a data-keywords='" + attribute_keys + "' href='projects/" + project.url + "' class='project title-is--on-thumbnail title-is--dark thumbnail-is--small thumbnail-is--small title-align--center title-justify--center'>\
+      projects_grid_html = ''
+      projects.forEach((project) => {
+        if ((project.keywords.includes(filter) || filter == "FILTER") && project.visible == true) {
+          let attribute_keys = project.keywords.join("; ");
+          projects_grid_html = projects_grid_html.concat(
+            "<a data-keywords='" + attribute_keys + "' href='projects/" + project.url + "' class='project title-is--on-thumbnail title-is--dark thumbnail-is--small thumbnail-is--small title-align--center title-justify--center'>\
           <div class='project-name'>\
             <div class='ufo--project-title-container'>\
               <div class='project-title'>" + project.title + "</div>\
@@ -295,20 +312,20 @@
             <div class='ufo--project-title-container'>\
               <div class='project-subtitle'>" + project.subtitle + "</div>\
             </div>"
-      )
-      projects_grid_html = projects_grid_html.concat(
-        "<div class='keywords'>"
-      );
-      project.keywords.forEach((keyword) => {
-        projects_grid_html = projects_grid_html.concat(
-          "<div class='keyword'>" + keyword + "</div>"
-        )
-      });
-      projects_grid_html = projects_grid_html.concat(
-        "</div>"
-      );
-      projects_grid_html = projects_grid_html.concat(
-        "<div class='ufo--project-title-container'>\
+          )
+          projects_grid_html = projects_grid_html.concat(
+            "<div class='keywords'>"
+          );
+          project.keywords.forEach((keyword) => {
+            projects_grid_html = projects_grid_html.concat(
+              "<div class='keyword'>" + keyword + "</div>"
+            )
+          });
+          projects_grid_html = projects_grid_html.concat(
+            "</div>"
+          );
+          projects_grid_html = projects_grid_html.concat(
+            "<div class='ufo--project-title-container'>\
               <div class='location'>📍 " + project.location + "</div>\
             </div>\
           </div>\
@@ -316,9 +333,13 @@
             <img src='img/" + project.img + "' class='project-thumbnail'>\
           </div>\
         </a>"
-      )
-    });
-    document.getElementById('projects-grid').innerHTML = projects_grid_html;
+          )
+        }
+      });
+      document.getElementById('projects-grid').innerHTML = projects_grid_html;
+    }
+
+    insertProjects("FILTER")
 
     function list_view() {
       toggle_view("list");
@@ -331,13 +352,17 @@
     }
   </script>
   <script>
-    const projects = document.querySelectorAll('[data-keywords]');
-
     function filter_keywords() {
       let keywords = document.getElementById("keywords");
       let value = keywords.value;
+      insertProjects(value)
+    }
+
+    function filter_keywords2() {
+      let projects = document.querySelectorAll('[data-keywords]');
+      let keywords = document.getElementById("keywords");
+      let value = keywords.value;
       if (value == "FILTER") {
-        console.log('hey der');
         projects.forEach(project => {
           project.style.display = "";
         })

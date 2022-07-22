@@ -7,7 +7,7 @@ elements.forEach(element => {
     if (this.readyState !== 4) return;
     if (this.status !== 200) return; // or whatever error handling you want
     element.innerHTML = this.responseText;
-    console.log(this.responseText)
+    // console.log(this.responseText)
   };
   xhr.send();
 });
