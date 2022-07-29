@@ -116,3 +116,12 @@ select {
 .table-results tr:nth-child(even) {
   background-color: rgb(231, 231, 231);
 }
+
+p.caption {
+  padding-top: 0.5rem;
+  padding-bottom: 0.75rem;
+  color: #868e96 !important;
+  text-align: left;
+  font-size: small !important;
+  font-family: Rubik, sans-serif !important;
+}

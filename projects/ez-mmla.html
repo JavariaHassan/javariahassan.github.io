@@ -235,7 +235,7 @@
           <div class="text-container">
             <h3>✏️ Overview</h3>
             <p>
-              I am working with a group of researchers at the <a target="_blank" href="https://lit.gse.harvard.edu/">Learning, Innovation, and Technology lab</a> based at the Harvard Graduate School of Education to develop a <a target="_blank" href="https://mmla.gse.harvard.edu/">multimodal data collection
+              I am working with a group of engineers and researchers at the <a target="_blank" href="https://lit.gse.harvard.edu/">Learning, Innovation, and Technology lab</a> based at the Harvard University to develop a <a target="_blank" href="https://mmla.gse.harvard.edu/">multimodal data collection
               website</a>. The website uses state-of-the-art machine learning algorithms to collect data on students’ body posture, hand gestures, attention, emotions, and physiological states. The application is currently being used by 100+ Harvard graduate
               students enrolled in a Multimodal Analytics course.
             </p>
@@ -248,8 +248,8 @@
           <div class="text-container">
             <h3>👩🏻‍💻 My Role</h3>
             <p>
-              I am the team lead for this project. I researched the most effective models to use in the application, developed the frontend for the majority of tools currently available on the website, architected and developed the backend, and deployed the application.
-              I also provided technical guidance and mentorship to team members.
+              I am the team lead for this project. I defined the product roadmap, researched the most effective models to use in the application, developed the frontend for the majority of tools currently available on the website, architected and developed the backend,
+              and deployed the application. I also provided technical guidance and mentorship to team members.
             </p>
           </div>
         </div>
@@ -260,8 +260,8 @@
           <div class="text-container">
             <h3>🔎 Background</h3>
             <p>
-              Data has proven valuable in understanding student learning processes and uncovering factors that most affect learning outcomes. Recently, educational researchers have become more interested in new tools for capturing detailed learning trajectories, which
-              has led to the creation of a new methodology: Multimodal Learning Analytics (MMLA), involving the computational analysis of multimodal data. Generally, MMLA research focuses on using high-frequency sensors and wearable tracking devices,
+              Data has proven valuable in understanding student learning processes and uncovering factors that most affect learning outcomes. <span class="highlight">Recently, educational researchers have become more interested in new tools for capturing detailed learning trajectories, which
+              has led to the creation of a new methodology: Multimodal Learning Analytics (MMLA)</span>, involving the computational analysis of multimodal data. Generally, MMLA research focuses on using high-frequency sensors and wearable tracking devices,
               such as eye-trackers (e.g., Tobii eye-trackers) and motion sensors (e.g., Microsoft Kinect), to capture rich physiological and behavioral student data.
             </p>
           </div>
@@ -318,8 +318,34 @@
       <section class="ufo--case-study-section p_section p_section--text" style=" ">
         <div class="ufo--p-container-fluid">
           <div class="text-container">
-            However, with advances in computer vision, machine learning, and computer hardware, multimodal data collection has allowed for new, simplifying possibilities. For instance, computer vision algorithms can now accurately predict heart rate by computing
-            minute skin tone differentials. More broadly, machine learning algorithms can now be used to develop easy-to-use and low-cost alternatives to conventional multimodal data collection.
+            <h3>🎨 Product Development Process</h3>
+            <p>
+              I adopted the following product development process. Since I had limited time before the product launch, I focused most of my time on development and iterating over that.
+            </p>
+          </div>
+          <br><br>
+          <div style="overflow-x:auto;">
+            <div class="">
+              <img style="height: 200px; margin-left: auto; margin-right: auto; display: block;" src="/img/ez-mmla/flow.svg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ufo--case-study-section p_section p_section--text" style=" ">
+        <div class="ufo--p-container-fluid">
+          <div class="text-container">
+            <h3>Ideation</h3>
+            <p>
+              Our target is to democratize multimodal data collection. Based on this target and our problem statement, we identified the key business goals for our product. That is, we want to design a solution that is:
+            </p>
+            <ul>
+              <li>intuitive</li>
+              <li>low-cost, and </li>
+              <li>ethical</li>
+            </ul>
+            <p>
+              compared to traditionally used physical sensor technologies.
             </p>
           </div>
         </div>
@@ -328,9 +354,75 @@
       <section class="ufo--case-study-section p_section p_section--text" style=" ">
         <div class="ufo--p-container-fluid">
           <div class="text-container">
-            <h3>🎯 The Goal</h3>
+            <h3>Research</h3>
             <p>
-              Our goal is to democratize multimodal data collection using advanced machine learning algorithms behind a user-friendly interface. We want to design a more intuitive, low-cost, and ethical solution compared to traditionally used physical sensor technologies.
+              As a starting point, we each did some research on existing products in this area to investigate the current offerings in the market and take inspiration from particular features that we liked about each.
+            </p>
+            <p>
+              Particularly, we focused our research efforts on current advancements in computer vision, machine learning, and computer hardware to allow for new, simplifying possibilities. For instance, computer vision algorithms can now accurately predict heart rate
+              by computing minute skin tone differentials. More broadly, <span class="highlight">machine learning algorithms can now be used to develop easy-to-use and low-cost alternatives to conventional multimodal data collection.</span>
+            </p>
+            <p>Part of our research involved examinating existing computer-vision algorithms against physical sensors. The table below provides a summary of the differences between these two approaches for a few modalities.
+            </p>
+          </div>
+
+          <br><br>
+          <div style="overflow-x:auto;">
+            <table class="table-results">
+              <caption>Comparison of Physical and Webcam-based sensors across different modalities. Exemplar tools are underlined. Pros and cons are described below each tool.</caption>
+              <tbody>
+                <tr>
+                  <td style="font-family: 'Open Sans'; font-weight: bold; width: 20%;">Modality</td>
+                  <td style="font-family: 'Open Sans'; font-weight: bold;">Physical Sensor</td>
+                  <td style="font-family: 'Open Sans'; font-weight: bold;">Webcam-Based Sensor</td>
+                </tr>
+                <tr>
+                  <td>Skeletal Tracking</td>
+                  <td>
+                    <u>Kinect v2 ©</u>
+                    <br>Pro: 3D tracking
+                    <br>Con: Noisy in case of occlusions; discontinued
+                  </td>
+                  <td>
+                    <u>PoseNet</u>
+                    <br> Con: 2D tracking (no depth)
+                    <br> Pro: more accurate in case of occlusions
+                  </td>
+                </tr>
+                <tr>
+                  <td>Eye-Tracking</td>
+                  <td>
+                    <u>Tobii 4C/5 ©</u>
+                    <br> Pro: accurate
+                    <br> Con: cost
+                  </td>
+                  <td>
+                    <u>Webgazer</u>
+                    <br> Pro: can be integrated to any website
+                    <br> Con: less accurate
+                  </td>
+                </tr>
+                <tr>
+                  <td>Hand tracking</td>
+                  <td>
+                    <u>Leap Motion ©</u>
+                    <br> Pro: easily integrated to any headset
+                  </td>
+                  <td>
+                    <u>Google AI Hand Tracking</u>
+                    <br> Pro: as accurate as physical sensors
+                    <br> Con: slow for multiple hands
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <br>
+          <div class="text-container">
+            <p>
+              Sometimes webcam-based tools are equivalent to (or better than) dedicated sensors, and sometimes dedicated sensors provide better data. On the whole, large machine learning applications are able to operate moderately well online in real-time with support
+              from open-source development teams such as Google’s TensorFlow.js. As such, <span class="highlight">our proposed approach for multimodal data collection is to utilize web-based tools and machine learning models for data collection.</span>
             </p>
           </div>
         </div>
@@ -339,32 +431,120 @@
       <section class="ufo--case-study-section p_section p_section--text" style=" ">
         <div class="ufo--p-container-fluid">
           <div class="text-container">
-            <h3>🧩 Our Solution</h3>
+            <h3>Planning</h3>
             <p>
-              We developed the EZ-MMLA toolkit, which is a website for collecting multimodal data via video and audio input captured either in real-time or uploaded for post-processing. It is free to use and open to the public, so it can be used by all educational
+              I created proof-of-concepts to test our idea and demonstrate feasibility, which are described below.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="ufo--case-study-section p_section p_section--text" style=" ">
+        <div class="ufo--p-container-fluid">
+          <div class="text-container">
+            <h4>Persona Development</h4>
+            <p>
+              Our platform is intended to be used by teachers, students and researchers for capturing multimodal data during web-based experiments and in the classroom. For instance, the tool has been used with consent to collect data from students in a data analysis
+              course to gain insights for teaching and to also serve as raw data for data analysis assignments.
+            </p>
+            <p>
+              I developed primary personas demonstrating our target users, especially their goals and pain points. I referred to them throughout the entire product development process.
+            </p>
+          </div>
+
+          <br><br>
+          <div style="overflow-x:auto;">
+            <div class="img-container">
+              <img style="max-height: 400px;" src="/img/ez-mmla/Persona.png">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ufo--case-study-section p_section p_section--text" style=" ">
+        <div class="ufo--p-container-fluid">
+          <div class="text-container">
+            <h4>Wireframing</h4>
+            <p>
+              I quickly mocked up some basic wireframes to gather feedback from the team and the users on the overall layout and structure of our app.
+            </p>
+          </div>
+          <br><br>
+          <div style="overflow-x:auto;">
+            <div class="img-container" style="gap: 30px;">
+              <img style="max-height: 400px;border: 1px solid #e8e8e8;" src="/img/ez-mmla/wireframe 1.png">
+              <img style="max-height: 400px;border: 1px solid #e8e8e8;" src="/img/ez-mmla/wireframe 2.png">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ufo--case-study-section p_section p_section--text" style=" ">
+        <div class="ufo--p-container-fluid">
+          <div class="text-container">
+            <h4>Validating the Designs</h4>
+            <p>
+              I conducted usability testing sessions with our primary users to validate whether the new designs would solve their problems. During the sessions, I observed how they interacted with the prototypes and made adjustments accordingly.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="ufo--case-study-section p_section p_section--text" style=" ">
+        <div class="ufo--p-container-fluid">
+          <div class="text-container">
+            <h3>🧩 Development</h3>
+            <p>
+              Finally, we developed the EZ-MMLA toolkit, which is a website for collecting multimodal data via video and audio input captured either in real-time or uploaded for post-processing. It is free to use and open to the public, so it can be used by all educational
               practitioners and researchers to collect multimodal student data. The types of data currently collected through the website are:
-              <ol>
-                <li>Body posture (skeletal data),</li>
-                <li>Hand gestures,</li>
-                <li>Attention (eye-tracking),</li>
-                <li>Emotions,</li>
-                <li>Physiological states (heart rate), and</li>
-                <li>Lower-level computer vision algorithms (fiducial and color tracking).</li>
-              </ol>
-
-              The EZ-MMLA Toolkit uses machine learning models written in JavaScript to detect data via video and audio streams that run entirely within the web browser. A significant advantage of such models is that the computation required to train and run them is
-              offloaded to the user’s device. This eliminates the need to maintain an expensive remote machine and allows our website to be scalable. It also allows for rapid real-time inferencing on the client-side, generating more comprehensive data
-              and creating smoother user experiences. Furthermore, personal data does not leave the user’s devices; in our case, this means that webcam recordings remain within the browser and users do not have to worry about the security concerns of
-              sending sensitive information over a network.
-
-              <br><br>The EZ-MMLA Toolkit website has been designed with a user-friendly interface that does not require any pre-requisite technical knowledge. On the home page, users can select from an index of data-collection tools that correspond to
-              a multimodal data type. When a user selects a tool, they are directed to a page where they can execute data collection in real-time through a webcam/microphone feed or upload a recording. Once the tracking is complete, the user is prompted
-              to download the data as a CSV file.
-
-              <br><br> <span style="font-weight: bold !important;">Comparing the EZ-MMLA toolkit with traditional data collection tools</span>
-              <br>While computer-vision algorithms provide us with new ways of capturing multimodal data, they are not interchangeable with physical sensors. Generally, webcam-based data collection tools tend to be less accurate than dedicated sensors,
-              but they are easier to access, distribute, setup, and use. They have also been steadily improving, as consumer hardware is becoming faster, higher resolution, and more affordable.
             </p>
+            <ol>
+              <li>Body posture (skeletal data),</li>
+              <li>Hand gestures,</li>
+              <li>Attention (eye-tracking),</li>
+              <li>Emotions,</li>
+              <li>Physiological states (heart rate), and</li>
+              <li>Lower-level computer vision algorithms (fiducial and color tracking).</li>
+            </ol>
+            <p>
+              <span class="highlight">The EZ-MMLA Toolkit uses machine learning models written in JavaScript to detect data via video and audio streams that run entirely within the web browser.</span> A significant advantage of such models is that the
+              computation required to train and run them is offloaded to the user’s device. This eliminates the need to maintain an expensive remote machine and allows our website to be scalable. It also allows for rapid real-time inferencing on the client-side,
+              generating more comprehensive data and creating smoother user experiences. Furthermore, personal data does not leave the user’s devices; in our case, this means that webcam recordings remain within the browser and users do not have to worry
+              about the security concerns of sending sensitive information over a network.
+            </p>
+            <p>
+              The EZ-MMLA Toolkit website <span class="highlight">has been designed with a user-friendly interface that does not require any pre-requisite technical knowledge.</span> On the main page, users can select from an index of data-collection
+              tools that correspond to a multimodal data type. When a user selects a tool, they are directed to a page where they can execute data collection in real-time through a webcam/microphone feed or upload a recording. Once the tracking is complete,
+              the user is prompted to download the data as a CSV file.
+            </p>
+          </div>
+          <br><br>
+          <div style="overflow-x:auto;">
+            <div class="img-container" style="gap: 40px;">
+              <div style="width: 785.42px;">
+                <div style="width: 785.42px; overflow:hidden; display:block; height: 390px; border: 1px solid #e8e8e8;">
+                  <video height="400" muted autoplay loop>
+                  <source src="/img/ez-mmla/main-page.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                </div>
+                <p class="caption">Home page.</p>
+              </div>
+
+              <div style="width: 785.42px;">
+                <div style="width: 785.42px; overflow:hidden; display:block; height: 390px; border: 1px solid #e8e8e8;">
+                  <video height="400" muted autoplay loop>
+                  <source src="/img/ez-mmla/tools-page.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                </div>
+                <p class="caption">Tools page. This page contains an index of data collection tools the user can select from.</p>
+              </div>
+              <div style="width: 785.42px;">
+                <img style="width: 785.42px; border: 1px solid #e8e8e8;" src="/img/ez-mmla/posenet.png">
+                <p class="caption">Main data collection page. This page allows the user to collect data from the PoseNet model via a webcam feed or video recording.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -372,15 +552,15 @@
       <section class="ufo--case-study-section p_section p_section--text" style=" ">
         <div class="ufo--p-container-fluid">
           <div class="text-container">
-            <h3>✍️ User Feedback</h3>
+            <h3>✍️ Testing & User Feedback</h3>
             <p>
-              There are several sources of user feedback that were collected during the semester. One source is anonymous weekly survey data from students: one question asked students to describe an aspect of class they enjoyed that week, the second was an aspect of
-              class they felt needed improvement, and the third prompted students to report their experiences using the EZ-MMLA toolkit. Additionally, we included a usability instrument in the survey. Students were also prompted to give their feedback
-              during class, sometimes orally and sometimes in a chat room.
-
-              <br><br>A total of 504 open-ended response sets were collected over the course of 12 weeks, and 82 open-ended comments were identified as being relevant to the EZ-MMLA toolkit. We conducted thematic analysis on the data to identify key themes.
-              Taking an inductive approach, preliminary codes were assigned to the data, which were then iteratively organized into two main themes (positive, negative) and several sub-themes on how students found the experience, shown briefly in the
-              table below.
+              In the Fall 2020, <span class="highlight">the EZ-MMLA toolkit was used in a course on Multimodal Learning Analytics at Harvard University.</span> There are several sources of user feedback that were collected during the semester. One source
+              is anonymous weekly survey data from students: one question asked students to describe an aspect of class they enjoyed that week, the second was an aspect of class they felt needed improvement, and the third prompted students to report their
+              experiences using the EZ-MMLA toolkit. Additionally, we included a usability instrument in the survey. Students were also prompted to give their feedback during class, sometimes orally and sometimes in a chat room.
+            </p>
+            <p>
+              <span class="highlight">A total of 504 open-ended response sets were collected over the course of 12 weeks</span>, and 82 open-ended comments were identified as being relevant to the EZ-MMLA toolkit. We conducted thematic analysis on the
+              data to identify key themes. We organized the responses into two main themes (positive, negative) and several sub-themes on how students found the experience, shown briefly in the table below.
             </p>
           </div>
 
@@ -421,29 +601,58 @@
           </div>
 
           <div class="text-container">
+            <br>
             <p>
-              <br><br><em>Usability.</em> To assess the usability of the website, we used Brooke’s “quick and dirty” System Usability Scale (SUS) which comprises 10 questions that users rate on a 5 point scale from “Strongly Disagree” to “Strongly Agree”.
-              Questions for example included “I found the system unnecessarily complex” or “I would imagine that most people would learn to use this system very quickly”. The final score is between 0 and 100, representing 7 levels from worst to best.
-              29 students completed the SUS instrument. The final score of the EZ-MMLA website is 71.94 (SD = 14.84). The lowest scoring question was “I found the website unnecessarily complex” (mean = 3.6), which suggests that the website could be simplified
-              from a user’s standpoint.
+              <b>Usability.</b> To assess the usability of the website, we used Brooke’s “quick and dirty” System Usability Scale (SUS) which comprises 10 questions that users rate on a 5 point scale from “Strongly Disagree” to “Strongly Agree”. Questions
+              for example included “I found the system unnecessarily complex” or “I would imagine that most people would learn to use this system very quickly”. The final score is between 0 and 100, representing 7 levels from worst to best. 29 students
+              completed the SUS instrument. The final score of the EZ-MMLA website is 71.94 (SD = 14.84). The lowest scoring question was “I found the website unnecessarily complex” (mean = 3.6), which suggests that the website could be simplified from
+              a user’s standpoint.
+            </p>
 
-              <br><br><em>Authenticity.</em> Students seemed to appreciate that the data collected by the toolkit was, in the words of one student, “massive datasets that are generated by real MMLA tools.” Students were motivated that the data was authentic,
-              and were also able to get their hands dirty in data analytics — one student noted that “the opportunity to work with data collection directly…helps me to understand [the] limitations of data.” This perceived authenticity presents an opportunity
+            <p>
+              One pain point we discovered during our usability tests was that users found the sidebar on model configurations to be intimidating when first opening the main data collection page. Therefore, we hid those settings in a sidebar to the left of the page,
+              which, when needed, could be opened up by users as they get more comfortable with the tool. This is illustrated below.
+            </p>
+          </div>
+
+          <br><br>
+          <div style="overflow-x:auto;">
+            <div class="img-container" style="gap: 40px;">
+              <div>
+                <div style="overflow:hidden; display:block; height: 400px; border: 1px solid #e8e8e8;">
+                  <video height="400" muted autoplay loop>
+                    <source src="/img/ez-mmla/settings.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <p class="caption">The model configuration settings are hidden when the user first lands on the page, but can be displayed when needed.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-container">
+            <p>
+              <b>Authenticity.</b> Students seemed to appreciate that the data collected by the toolkit was, in the words of one student, “massive datasets that are generated by real MMLA tools.” Students were motivated that the data was authentic, and
+              were also able to get their hands dirty in data analytics — one student noted that “the opportunity to work with data collection directly…helps me to understand [the] limitations of data.” This perceived authenticity presents an opportunity
               for the EZ-MMLA toolkit in data science education; it is well known that authentic problems that are directly related to students foster engagement, motivation and deep understanding.
-
-              <br><br><em>Accessibility.</em> Several students noted that the functionalities and data collected by the toolkit were intuitive to access and understand, despite their lack of prior expertise. One student stated that the activity using
-              the emotion detection functionality of the toolkit “far exceeded my expectations in terms of what is possible to do as a student in our 3rd week of class”, and another felt the tool was “simple and straightforward to use”.
-
-              <br><br><em>Technical issues.</em> The most prominent negative theme that emerged, on the other hand, was the frustration caused by technical issues. The most common issue was the website simply being slow and laggy for some students. A
-              few reported that their laptops were running slower than usual when running the toolkit. The downloading function also caused some trouble, where webcam data could only be accessed by one application at a time.
-
-              <br><br><em>Steep learning curve.</em> While some functionalities felt intuitive and accessible for some students, other functions felt difficult to grasp for others. Some students reported re-attempting data collection a few times before
-              getting it right, and asked questions such as, “how can we check if data is being correctly collected?” Some students explicitly asked for examples and additional documentation. For instance, on collecting data for skeletal tracking, one
-              comment was “I wish we knew an average number of frames that should be collected”.
-
-              <br><br><em>Data quality.</em> A few comments pointed out the limitations of the data collected by the toolkit. One type of limitation arose from the unique context of students being privy to the exact setup and inner workings of the subject
-              when working with their own data. This included concerns about how they had been conscious of the sensors and modeled their behavior to get ‘good’ data, or how they were concerned about the data being inaccurate because they were using a
-              dual monitor setup, or had repeated the same experiment a few times before collecting the final dataset.
+            </p>
+            <p>
+              <b>Accessibility.</b> Several students noted that the functionalities and data collected by the toolkit were intuitive to access and understand, despite their lack of prior expertise. One student stated that the activity using the emotion
+              detection functionality of the toolkit “far exceeded my expectations in terms of what is possible to do as a student in our 3rd week of class”, and another felt the tool was “simple and straightforward to use”.
+            </p>
+            <p>
+              <b>Technical issues.</b> The most prominent negative theme that emerged, on the other hand, was the frustration caused by technical issues. The most common issue was the website simply being slow and laggy for some students. A few reported
+              that their laptops were running slower than usual when running the toolkit. The downloading function also caused some trouble, where webcam data could only be accessed by one application at a time.
+            </p>
+            <p>
+              <b>Steep learning curve.</b> While some functionalities felt intuitive and accessible for some students, other functions felt difficult to grasp for others. Some students reported re-attempting data collection a few times before getting
+              it right, and asked questions such as, “how can we check if data is being correctly collected?” Some students explicitly asked for examples and additional documentation. For instance, on collecting data for skeletal tracking, one comment
+              was “I wish we knew an average number of frames that should be collected”.
+            </p>
+            <p>
+              <b>Data quality.</b> A few comments pointed out the limitations of the data collected by the toolkit. One type of limitation arose from the unique context of students being privy to the exact setup and inner workings of the subject when
+              working with their own data. This included concerns about how they had been conscious of the sensors and modeled their behavior to get ‘good’ data, or how they were concerned about the data being inaccurate because they were using a dual
+              monitor setup, or had repeated the same experiment a few times before collecting the final dataset.
             </p>
           </div>
         </div>
@@ -452,11 +661,23 @@
       <section class="ufo--case-study-section p_section p_section--text" style=" ">
         <div class="ufo--p-container-fluid">
           <div class="text-container">
-            <h3>💡 Conclusion</h3>
+            <h3>💡 Results & Takeaways</h3>
             <p>
-              In summary, this project finds that the results from the preliminary examination are encouraging. The platform has been broadly successful and indicative of how the proposed web-based approach might be viewed as a viable new medium for MMLA. Importantly,
-              our findings suggest that there is the potential to overturn the conventional MMLA pipeline and democratize learning research.
+              The platform has been broadly successful and indicative of how the proposed web-based approach might be viewed as a viable new medium for MMLA. It has become a permanent part of a Data Analytics course offered at Harvard University to graduate students.
+              <span class="highlight">The application helped to cut down classroom costs from $2000+ in physical sensors to $0 in webcam-based sensing </span> in the browser using JavaScript Machine Learning models. While there is still room for improvement,
+              our results and findings suggest that there is the potential to overturn the conventional MMLA pipeline and democratize learning research.
             </p>
+            <p>
+              Some key takeaways from this project are:
+            </p>
+            <ol>
+              <li>
+                <b>Create a strategic plan to launch a product.</b> This helps to deliver a quality product when there is limited time.
+              </li>
+              <li>
+                <b>User testing doesn't end after development.</b> Design is a constant iteration of improving the experience for the end user. Always find ways to collect and listen to your user's feedback.
+              </li>
+            </ol>
           </div>
         </div>
       </section>

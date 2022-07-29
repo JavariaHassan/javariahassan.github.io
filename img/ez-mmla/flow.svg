@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2741" height="503.963" viewBox="0 0 2741 503.963">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="2741" height="304" fill="none"/>
+    </clipPath>
+    <filter id="Rectangle_3" x="-13" y="135.981" width="500" height="230" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#d2d9dd" flood-opacity="0.729"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_3-2" x="547" y="135.981" width="500" height="230" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-color="#d2d9dd" flood-opacity="0.729"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_3-3" x="1107" y="135.981" width="500" height="230" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-3"/>
+      <feFlood flood-color="#d2d9dd" flood-opacity="0.729"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_3-4" x="1667" y="135.981" width="500" height="230" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-4"/>
+      <feFlood flood-color="#d2d9dd" flood-opacity="0.729"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_3-5" x="2227" y="135.981" width="500" height="230" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-5"/>
+      <feFlood flood-color="#d2d9dd" flood-opacity="0.729"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_8" data-name="Group 8" transform="translate(-147 -376.019)">
+    <g id="Repeat_Grid_1" data-name="Repeat Grid 1" transform="translate(147 445)" clip-path="url(#clip-path)">
+      <g id="Group_1" data-name="Group 1" transform="translate(-147 -445)">
+        <g transform="matrix(1, 0, 0, 1, 147, 376.02)" filter="url(#Rectangle_3)">
+          <g id="Rectangle_3-6" data-name="Rectangle 3" transform="translate(0 148.98)" fill="#fff" stroke="#d2d9dd" stroke-width="1">
+            <rect width="470" height="200" rx="20" stroke="none"/>
+            <rect x="0.5" y="0.5" width="469" height="199" rx="19.5" fill="none"/>
+          </g>
+        </g>
+        <text id="Idea_Generation" data-name="Idea Generation" transform="translate(382 639)" fill="#353738" font-size="41" font-family="Rubik-Bold, Rubik" font-weight="700"><tspan x="-162.79" y="0">Idea Generation</tspan></text>
+        <g id="Group_2" data-name="Group 2" transform="translate(0 66)">
+          <circle id="Ellipse_1" data-name="Ellipse 1" cx="28" cy="28" r="28" transform="translate(147 379)" fill="#d2d9dd"/>
+          <text id="_1" data-name="1" transform="translate(175 417)" fill="#fff" font-size="28" font-family="Rubik-Bold, Rubik" font-weight="700"><tspan x="-6.958" y="0">1</tspan></text>
+        </g>
+      </g>
+      <g id="Group_1-2" data-name="Group 1" transform="translate(413 -445)">
+        <g transform="matrix(1, 0, 0, 1, -413, 376.02)" filter="url(#Rectangle_3-2)">
+          <g id="Rectangle_3-7" data-name="Rectangle 3" transform="translate(560 148.98)" fill="#fff" stroke="#d2d9dd" stroke-width="1">
+            <rect width="470" height="200" rx="20" stroke="none"/>
+            <rect x="0.5" y="0.5" width="469" height="199" rx="19.5" fill="none"/>
+          </g>
+        </g>
+        <text id="Research" transform="translate(382 639)" fill="#353738" font-size="41" font-family="Rubik-Bold, Rubik" font-weight="700"><tspan x="-96.452" y="0">Research</tspan></text>
+        <g id="Group_2-2" data-name="Group 2" transform="translate(0 66)">
+          <circle id="Ellipse_1-2" data-name="Ellipse 1" cx="28" cy="28" r="28" transform="translate(147 379)" fill="#d2d9dd"/>
+          <text id="_2" data-name="2" transform="translate(175 417)" fill="#fff" font-size="28" font-family="Rubik-Bold, Rubik" font-weight="700"><tspan x="-9.1" y="0">2</tspan></text>
+        </g>
+      </g>
+      <g id="Group_1-3" data-name="Group 1" transform="translate(973 -445)">
+        <g transform="matrix(1, 0, 0, 1, -973, 376.02)" filter="url(#Rectangle_3-3)">
+          <g id="Rectangle_3-8" data-name="Rectangle 3" transform="translate(1120 148.98)" fill="#fff" stroke="#d2d9dd" stroke-width="1">
+            <rect width="470" height="200" rx="20" stroke="none"/>
+            <rect x="0.5" y="0.5" width="469" height="199" rx="19.5" fill="none"/>
+          </g>
+        </g>
+        <text id="Planning" transform="translate(382 639)" fill="#353738" font-size="41" font-family="Rubik-Bold, Rubik" font-weight="700"><tspan x="-90.221" y="0">Planning</tspan></text>
+        <g id="Group_2-3" data-name="Group 2" transform="translate(0 66)">
+          <circle id="Ellipse_1-3" data-name="Ellipse 1" cx="28" cy="28" r="28" transform="translate(147 379)" fill="#d2d9dd"/>
+          <text id="_3" data-name="3" transform="translate(175 417)" fill="#fff" font-size="28" font-family="Rubik-Bold, Rubik" font-weight="700"><tspan x="-9.226" y="0">3</tspan></text>
+        </g>
+      </g>
+      <g id="Group_1-4" data-name="Group 1" transform="translate(1533 -445)">
+        <g transform="matrix(1, 0, 0, 1, -1533, 376.02)" filter="url(#Rectangle_3-4)">
+          <g id="Rectangle_3-9" data-name="Rectangle 3" transform="translate(1680 148.98)" fill="#fff" stroke="#d2d9dd" stroke-width="1">
+            <rect width="470" height="200" rx="20" stroke="none"/>
+            <rect x="0.5" y="0.5" width="469" height="199" rx="19.5" fill="none"/>
+          </g>
+        </g>
+        <text id="Development" transform="translate(382 639)" fill="#353738" font-size="41" font-family="Rubik-Bold, Rubik" font-weight="700"><tspan x="-135.341" y="0">Development</tspan></text>
+        <g id="Group_2-4" data-name="Group 2" transform="translate(0 66)">
+          <circle id="Ellipse_1-4" data-name="Ellipse 1" cx="28" cy="28" r="28" transform="translate(147 379)" fill="#d2d9dd"/>
+          <text id="_4" data-name="4" transform="translate(175 417)" fill="#fff" font-size="28" font-family="Rubik-Bold, Rubik" font-weight="700"><tspan x="-9.562" y="0">4</tspan></text>
+        </g>
+      </g>
+      <g id="Group_1-5" data-name="Group 1" transform="translate(2093 -445)">
+        <g transform="matrix(1, 0, 0, 1, -2093, 376.02)" filter="url(#Rectangle_3-5)">
+          <g id="Rectangle_3-10" data-name="Rectangle 3" transform="translate(2240 148.98)" fill="#fff" stroke="#d2d9dd" stroke-width="1">
+            <rect width="470" height="200" rx="20" stroke="none"/>
+            <rect x="0.5" y="0.5" width="469" height="199" rx="19.5" fill="none"/>
+          </g>
+        </g>
+        <text id="Testing" transform="translate(382 639)" fill="#353738" font-size="41" font-family="Rubik-Bold, Rubik" font-weight="700"><tspan x="-76.199" y="0">Testing</tspan></text>
+        <g id="Group_2-5" data-name="Group 2" transform="translate(0 66)">
+          <circle id="Ellipse_1-5" data-name="Ellipse 1" cx="28" cy="28" r="28" transform="translate(147 379)" fill="#d2d9dd"/>
+          <text id="_5" data-name="5" transform="translate(175 417)" fill="#fff" font-size="28" font-family="Rubik-Bold, Rubik" font-weight="700"><tspan x="-9.044" y="0">5</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g id="Group_3" data-name="Group 3">
+      <path id="Path_1" data-name="Path 1" d="M2353.223,474.983V351.175h560.719V474.983" transform="translate(-1971.223 26.344)" fill="none" stroke="#56bc93" stroke-width="3" stroke-dasharray="12 5"/>
+      <path id="Polygon_1" data-name="Polygon 1" d="M12,0,24,15H0Z" transform="translate(955 507) rotate(180)" fill="#56bc93"/>
+    </g>
+    <g id="Group_4" data-name="Group 4" transform="translate(1135.5)">
+      <path id="Path_1-2" data-name="Path 1" d="M2353.223,474.983V351.175h530.025V474.983" transform="translate(-1971.223 26.344)" fill="none" stroke="#56bc93" stroke-width="3" stroke-dasharray="12 5"/>
+      <path id="Polygon_1-2" data-name="Polygon 1" d="M12,0,24,15H0Z" transform="translate(924.307 507) rotate(180)" fill="#56bc93"/>
+    </g>
+    <g id="Group_5" data-name="Group 5" transform="translate(944.5 749)">
+      <path id="Path_1-3" data-name="Path 1" d="M2353.223,351.175V474.983h560.719V351.175" transform="translate(-2353.223 -345.501)" fill="none" stroke="#56bc93" stroke-width="3" stroke-dasharray="12 5"/>
+      <path id="Polygon_1-3" data-name="Polygon 1" d="M12,0,24,15H0Z" transform="translate(549)" fill="#56bc93"/>
+    </g>
+    <g id="Group_6" data-name="Group 6" transform="translate(2080.5 749)">
+      <path id="Path_1-4" data-name="Path 1" d="M2353.223,351.175V474.983h560.719V351.175" transform="translate(-2353.223 -345.501)" fill="none" stroke="#56bc93" stroke-width="3" stroke-dasharray="12 5"/>
+      <path id="Polygon_1-4" data-name="Polygon 1" d="M12,0,24,15H0Z" transform="translate(549)" fill="#56bc93"/>
+    </g>
+    <g id="Group_7" data-name="Group 7" transform="translate(2078.251 377.519)">
+      <path id="Path_1-5" data-name="Path 1" d="M2902.191,474.983V351.175H2353.223V474.983" transform="translate(-2340.942 -351.175)" fill="none" stroke="#56bc93" stroke-width="3" stroke-dasharray="12 5"/>
+      <path id="Polygon_1-5" data-name="Polygon 1" d="M12,0,24,15H0Z" transform="translate(24 129.481) rotate(180)" fill="#56bc93"/>
+    </g>
+  </g>
+</svg>
